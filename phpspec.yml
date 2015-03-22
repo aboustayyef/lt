@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: LebaneseTweets
+        psr4_prefix: LebaneseTweets
+        src_path: app
