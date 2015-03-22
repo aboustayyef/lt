@@ -17,7 +17,7 @@ Route::get('/', function(){
 	return redirect('/mps');
 });
 
-Route::get('/mps', 'mpsController@index');
+Route::get('/mps', 'MpsController@index');
 
 
 Route::controllers([
