@@ -6,4 +6,5 @@
 		<br>
 		For more info <a href="http://twitter.com/beirutspring">contact me on Twitter</a>;
 	</p>
+	<hr>
 </div>
