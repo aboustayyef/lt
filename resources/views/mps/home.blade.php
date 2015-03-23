@@ -5,7 +5,7 @@ Lebanon Mps Tweet
 @stop
 
 @section('description')
-The Tweets of Lebanon's MPs
+Latest Tweets of Lebanese MPs, Filtered by Party, Sect and District
 @stop
 
 @section('content')

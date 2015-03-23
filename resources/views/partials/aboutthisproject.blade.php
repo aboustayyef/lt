@@ -2,6 +2,8 @@
 	
 	<h4>About This Project</h4>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio fuga nisi reprehenderit at rem eos doloremque excepturi, quaerat dolores accusantium suscipit quis tempora dolore, sint quam, nam reiciendis rerum labore, commodi voluptatum! Deleniti voluptas dicta tempore voluptate, nobis hic, consectetur perspiciatis quidem suscipit ipsam itaque ullam eligendi
+		This tool makes use of the <a href="http://nouwweb.readthedocs.org/en/latest/">Nouwweb Api</a> to get the latest tweets from the Lebanese Members of Parliament, filtered by relevant criteria.
+		<br>
+		For more info <a href="http://twitter.com/beirutspring">contact me on Twitter</a>;
 	</p>
 </div>
