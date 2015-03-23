@@ -14,7 +14,6 @@ class Mp extends Model {
 	 */
 
 	public function refreshList(){
-		$this->truncate();
 		(new RefreshListOfMps)->refresh();
 	}
 

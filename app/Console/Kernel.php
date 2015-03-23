@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel {
 	protected $commands = [
 		'LebaneseTweets\Console\Commands\Inspire',
 		'LebaneseTweets\Console\Commands\getLatestTweets',
+		'LebaneseTweets\Console\Commands\refreshListOfMps',
 	];
 
 	/**

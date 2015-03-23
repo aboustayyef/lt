@@ -1,20 +1,44 @@
-<?php namespace LebaneseTweets\Utilities;
+<?php namespace LebaneseTweets\Console\Commands;
 
-use \LebaneseTweets\Mp;
+use Illuminate\Console\Command;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Input\InputArgument;
+use LebaneseTweets\Mp;
+use LebaneseTweets\Tweet;
+
+class refreshListOfMps extends Command {
 
 	/**
-	* 
-	*/
+	 * The console command name.
+	 *
+	 * @var string
+	 */
+	protected $name = 'lebaneseTweets:refreshListOfMps';
 
-	class RefreshListOfMps
+	/**
+	 * The console command description.
+	 *
+	 * @var string
+	 */
+	protected $description = 'refresh the list of mps from the nouwweb api';
+
+	/**
+	 * Create a new command instance.
+	 *
+	 * @return void
+	 */
+	public function __construct()
 	{
-		
+		parent::__construct();
+	}
 
-		function __construct()
-		{
-		}
-
-		function refresh()	{
+	/**
+	 * Execute the console command.
+	 *
+	 * @return mixed
+	 */
+	public function fire()
+	{
 
 		// get json data from Mps api
 		$allMps = @file_get_contents('http://api.nouwweb.pw/search?twitter=true');
@@ -36,9 +60,11 @@ use \LebaneseTweets\Mp;
 				if ($recordExists) {
 					// replace content of existing record
 					$record = Mp::where('twitterHandle', $twitterHandle)->first();
+					$this->comment('Editing records of ' . $mp->first_name . ' ' . $mp->last_name);
 				}else{
 					// create new record
 					$record = new Mp;
+					$this->comment('Adding new record of ' . $mp->first_name . ' ' . $mp->last_name);
 				}
 
 				$record->first_name = $mp->first_name;
@@ -56,9 +82,6 @@ use \LebaneseTweets\Mp;
 		}
 
 		return false;
-
-	}
 	}
 
-?>
-
+}
