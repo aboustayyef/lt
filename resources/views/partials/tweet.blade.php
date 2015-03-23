@@ -11,7 +11,7 @@
 	  <div class="media-body">
 	    <h3>
 			@if($tweet->is_retweet == 1)
-				<small>Retweeted By
+				<small>{!!view('icons.retweetsvg')!!}  Retweeted By
 			@endif
 			{{$tweet->first_name}} {{$tweet->last_name}}
 				
@@ -22,7 +22,7 @@
 		</h3>
 	    <p>{!! $tweet->content !!}</p>
 		@if($tweet->media)
-			<div class="embeddedMedia" style="max-width:100%">
+			<div class="embeddedMedia">
 				<img src="{{$tweet->media}}">
 			</div>
 		@endif

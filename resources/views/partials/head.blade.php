@@ -8,5 +8,6 @@
 	<title>@yield('title')</title>
 	<meta name="description" content="@yield('description')">
 
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/lebanesetweets.css?v=1') }}" rel="stylesheet">
 </head>
