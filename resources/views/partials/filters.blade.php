@@ -58,7 +58,7 @@
 
 <!-- Button -->
 <div class="form-group">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit And Refresh</button>
+    <button class="btn btn-primary">Submit And Refresh</button>
 </div>
 
 </fieldset>
