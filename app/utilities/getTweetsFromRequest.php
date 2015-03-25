@@ -1,7 +1,7 @@
 <?php namespace LebaneseTweets\Utilities;
 
 	/**
-	* 
+	* This is where the filtering happens
 	*/
 
 	class getTweetsFromRequest

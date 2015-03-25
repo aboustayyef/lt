@@ -58,7 +58,8 @@
 				$tweet->username = 	$canonicalUser->screen_name;
 				$tweet->user_image = $canonicalUser->profile_image_url;
 				$tweet->tweet_date = (new \Carbon\Carbon)->parse($rawTweet->created_at);
-
+				$tweet->retweets = $canonicalTweet->retweet_count;
+				$tweet->favorites = $canonicalTweet->favorite_count;
 				$tweets[] = $tweet;
 		}
 			return $tweets;

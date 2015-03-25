@@ -1,12 +1,14 @@
 <div class="tweet">
 	<div class="meta">
-		<?php $time = new \Carbon\Carbon($tweet->tweet_date) ?>
-		{{$time->diffForHumans()}}
+		<a href="https://twitter.com/{{$tweet->username}}/status/{{$tweet->twitter_id}}">
+			<?php $time = new \Carbon\Carbon($tweet->tweet_date) ?>
+			{{$time->diffForHumans()}}
+		</a>
 	</div>
 
 	<div class="media">
 	  <div class="media-left">
-	      <img class="media-object" src="{{$tweet->user_image}}" alt="Profile Pic">
+	      <a href="https://twitter.com/{{$tweet->username}}"><img class="media-object" src="{{$tweet->user_image}}" alt="Profile Pic"></a>
 	  </div>
 	  <div class="media-body">
 	    <h3>
@@ -23,7 +25,9 @@
 	    <p>{!! $tweet->content !!}</p>
 		@if($tweet->media)
 			<div class="embeddedMedia">
-				<img src="{{$tweet->media}}">
+				<a href="https://twitter.com/{{$tweet->username}}/status/{{$tweet->twitter_id}}">
+					<img src="{{$tweet->media}}">
+				</a>
 			</div>
 		@endif
 	  </div>
