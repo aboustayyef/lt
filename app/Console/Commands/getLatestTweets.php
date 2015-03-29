@@ -6,6 +6,10 @@ use Symfony\Component\Console\Input\InputArgument;
 use LebaneseTweets\Mp;
 use LebaneseTweets\Tweet;
 
+/**
+ *	Usage: LebaneseTweets:getLatest mps|journalists|bloggers 
+ */
+
 class getLatestTweets extends Command {
 
 	/**
@@ -40,36 +44,53 @@ class getLatestTweets extends Command {
 	public function fire()
 	{
 
-		// Get Mps
-		$mps = Mp::all();
-		foreach ($mps as $key => $mp) {
+		$sourceType = $this->argument('tweetsSource');
+
+		// Get group
+		switch ($sourceType) {
+			case 'mps':
+				$group = Mp::all();
+				break;
+			case 'journalists':
+				die('model not ready yet');
+				break;
+			case 'bloggers':
+				die('model not ready yet');
+			break;
+			default:
+				die('Argument should be either mps, bloggers or journalists');
+			break;
+		}
+		
+		foreach ($group as $key => $member) {
 			try {
-				$tweets = $mp->getLatestTweetsFromTwitter(5);
+				$tweets = $member->getLatestTweets(5);
 				foreach ($tweets as $key => $tweet) {
 
 					// if tweet doesn't exists, save it				
 					if (Tweet::where('twitter_id', $tweet->id)->count() == 0 ) {
-						// tweet doesn't exist, save
-						$newRecord = Tweet::create([
-							'mp_id' => $mp->id,
-							'twitter_id' => $tweet->id,
-							'content' => $tweet->content,
-							'is_retweet' => $tweet->retweeted,
-							'username' => $tweet->username,
-							'user_image' => $tweet->user_image,
-							'tweet_date' => $tweet->tweet_date,
-							'media' => isset($tweet->media)? $tweet->media : null,
-							'favorites' => $tweet->favorites,
-							'retweets'	=> $tweet->retweets
-						]);
-						$this->comment('added tweet: http://twitter.com/'.$tweet->username.'/status/'.$tweet->id . ' F:'.$tweet->favorites.' R: '.$tweet->retweets);
+						$tweetRecord = new Tweet();
+						$status = $tweetRecord->store($tweet, $sourceType, $member->id);
+						$this->comment($status);
 					}
 				}			
 			} catch (Exception $e) {
-				$this->error('error retreiving a tweet by ' . $mp->twitterhandle);
+				$this->error('error retreiving a tweet by ' . $member->twitterhandle);
 			}
 	
 		}
+	}
+
+	/**
+	 * Get the console command arguments.
+	 *
+	 * @return array
+	 */
+	protected function getArguments()
+	{
+		return [
+			['tweetsSource', InputArgument::REQUIRED, 'Source Of Tweets, examples: mps, journalists or bloggers'],
+		];
 	}
 
 }

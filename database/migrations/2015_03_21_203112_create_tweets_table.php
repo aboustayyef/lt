@@ -14,7 +14,7 @@ class CreateTweetsTable extends Migration {
 	{
 		Schema::create('tweets', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('mp_id');
+            $table->integer('mp_id')->nullable();
             $table->string('twitter_id');
             $table->text('content');
             $table->boolean('is_retweet');

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 use \LebaneseTweets\Utilities\RefreshListOfMps;
-use \LebaneseTweets\Utilities\TweetsFromTwitter;
+use \LebaneseTweets\Twitter\TweetsGetter;
 
 class Mp extends Model {
 
@@ -24,9 +24,9 @@ class Mp extends Model {
 	 * @return array           
 	 */
 	
-	public function getLatestTweetsFromTwitter($howmany = 5){
-		$rawTweets = (new TweetsFromTwitter)->getFromUsername($this->twitterHandle, $howmany);
-		return $rawTweets;
+	public function getLatestTweets($howmany = 5){
+		$tweets = (new TweetsGetter)->getFromUsername($this->twitterHandle, $howmany);
+		return $tweets;
 	}
 
 	public function tweets(){
