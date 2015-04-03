@@ -20,23 +20,7 @@ class Tweet extends Model {
 	 * @param  $category_id, the id of the category (from model)
 	 * @return void
 	 */
-	public function store($tweet, $category ='mps', $category_id = null){
-
-		switch ($category) {
-			case 'mps':
-				$this->mp_id = $category_id;
-				break;
-			case 'journalists':
-				$this->journalist_id = $category_id;
-				break;
-			case 'bloggers':
-				$this->blogger_id = $category_id;
-				break;
-			default:
-				return false; // only one of the authorised kinds should be included
-				break;
-		}
-
+	public function store($tweet, $tweep_id = null){
 
 		// manage Raw Twitter Object
 		$retweeted = isset($tweet->retweeted_status) ? 1:0 ;
@@ -53,7 +37,7 @@ class Tweet extends Model {
 		$this->media = isset($tweet->media)? $tweet->media : null ;
 		$this->favorites = $canonicalTweet->favorite_count; ;
 		$this->retweets	= $canonicalTweet->retweet_count;
-
+		$this->tweep_id = $tweep_id;
 		// save it
 		$this->save();
 

@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/test', function(){
+	return view('layouts.main');
+});
 
 
 Route::get('/', function(){
@@ -19,6 +22,7 @@ Route::get('/', function(){
 
 Route::get('/mps', 'MpsController@index');
 
+Route::resource('session', 'SessionController', ['only'=>['create', 'destroy']]);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

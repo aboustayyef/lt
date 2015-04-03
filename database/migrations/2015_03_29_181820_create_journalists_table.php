@@ -12,7 +12,7 @@ class CreateJournalistsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('mps', function(Blueprint $table) {
+		Schema::create('journalists', function(Blueprint $table) {
             $table->increments('id');
             $table->string('first_name');
             $table->string('last_name');
@@ -21,6 +21,7 @@ class CreateJournalistsTable extends Migration {
             $table->string('medium');
             $table->string('language');
             $table->string('twitterHandle');
+            $table->string('lastEditedBy');
             $table->boolean('confirmed');
             $table->timestamps();
         });
@@ -33,7 +34,7 @@ class CreateJournalistsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('mps');
+		Schema::drop('journalists');
 	}
 
 }

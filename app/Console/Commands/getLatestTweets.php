@@ -3,7 +3,7 @@
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use LebaneseTweets\Mp;
+use LebaneseTweets\Tweep;
 use LebaneseTweets\Tweet;
 
 /**
@@ -43,44 +43,69 @@ class getLatestTweets extends Command {
 	 */
 	public function fire()
 	{
-
-		$sourceType = $this->argument('tweetsSource');
-
-		// Get group
-		switch ($sourceType) {
-			case 'mps':
-				$group = Mp::all();
-				break;
-			case 'journalists':
-				die('model not ready yet');
-				break;
-			case 'bloggers':
-				die('model not ready yet');
-			break;
-			default:
-				die('Argument should be either mps, bloggers or journalists');
-			break;
-		}
+		$started = new \Carbon\Carbon;
+		$this->Comment('*************************************************');
+		$this->Comment('Process Started at: ' . $started);
+		$this->Comment('*************************************************');
 		
-		foreach ($group as $key => $member) {
+		$tweeps = null;
+
+		// If argument is set and tweep exists, scope query to that account
+		if ($this->argument('twitterHandle')) {
+			if (Tweep::Where('twitterHandle', $this->argument('twitterHandle'))->count() > 0 ) {
+				$tweeps = Tweep::Where('twitterHandle', $this->argument('twitterHandle'))->get();
+			}
+		}
+
+		// otherwise use all tweeps
+		if (!$tweeps) {
+			$tweeps = Tweep::all();
+		}
+
+		
+		
+		$twitterClient = new \LebaneseTweets\Twitter\TweetsGetter;
+
+		foreach ($tweeps as $key => $tweep) {
+			$this->comment('Getting Tweets for user: ' . $tweep->twitterHandle);
 			try {
-				$tweets = $member->getLatestTweets(5);
+				$tweets = $tweep->getLatestTweets($twitterClient, 10);
 				foreach ($tweets as $key => $tweet) {
 
-					// if tweet doesn't exists, save it				
-					if (Tweet::where('twitter_id', $tweet->id)->count() == 0 ) {
+
+					// manage Raw Twitter Object
+					$retweeted = isset($tweet->retweeted_status) ? 1:0 ;
+					$canonicalTweet = $retweeted? $tweet->retweeted_status : $tweet;
+					$canonicalUser = $canonicalTweet->user;
+
+					// if tweet doesn't exists, save it	
+					
+					$this->info('twitter_id: ' . $canonicalTweet->id);
+
+					if (Tweet::where('twitter_id', $canonicalTweet->id)->count() == 0 ) {
 						$tweetRecord = new Tweet();
-						$status = $tweetRecord->store($tweet, $sourceType, $member->id);
-						$this->comment($status);
+						$status = $tweetRecord->store($tweet, $tweep->id);
+						$this->info($status);
+					}else{
+						$this->comment('Tweet Already stored');
 					}
 				}			
+				$this->info('Api Calls Remaining: '.$twitterClient->status());
+				$this->comment('Waiting 5 seconds');
+				sleep(5);
 			} catch (Exception $e) {
-				$this->error('error retreiving a tweet by ' . $member->twitterhandle);
+				$this->error('error retreiving a tweet by ' . $tweep->twitterhandle);
 			}
-	
 		}
+	
+	    $ended = new \Carbon\Carbon;
+		$this->Comment('*************************************************');
+		$this->Comment('Process ended at: ' . $ended);
+		$this->Comment('Process Took ' . $started->diffInSeconds() . 'seconds');
+		$this->Comment('*************************************************');	
+	
 	}
-
+	
 	/**
 	 * Get the console command arguments.
 	 *
@@ -89,7 +114,7 @@ class getLatestTweets extends Command {
 	protected function getArguments()
 	{
 		return [
-			['tweetsSource', InputArgument::REQUIRED, 'Source Of Tweets, examples: mps, journalists or bloggers'],
+			['twitterHandle', InputArgument::OPTIONAL, 'if twitter handle specified, get tweets of only that account'],
 		];
 	}
 

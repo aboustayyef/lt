@@ -1,5 +1,10 @@
 <?php namespace LebaneseTweets\Utilities;
 
+// library to fix mixed up strings to utf-8
+// Discovered at: http://stackoverflow.com/questions/910793/detect-encoding-and-make-everything-utf-8
+use \ForceUTF8\Encoding;
+
+
 	/**
 	* Takes a tweet object and returns a pretty HTML content body
 	*
@@ -30,18 +35,16 @@
 			// get original text
 			$originalText = $canonicalTweet->text;
 
+
 			// remove Emojis. causing sql problems
 			$originalText = self::removeEmoji($originalText);
 
 			// replace t.co links with pretty links and make them linkable
-			//
-			//
+
 			$numberOfUrls = count($canonicalTweet->entities->urls);
-			
-			$content ="";
+			$content =" ";
 			if ($numberOfUrls > 0) {
 				$parts = preg_split('#http(s)?://t\\.co/\\w+#',$originalText);
-
 				$counter = 0;
 				while ( $counter < $numberOfUrls) {
 					$urlObject = $canonicalTweet->entities->urls[$counter];
@@ -50,17 +53,17 @@
 
 					$content .= $parts[$counter];
 					$content .= '<a href="' . $expanded_url . '">' . $display_url . '</a>';
-					
 					$counter++;
 				}
 				$content .= $parts[$counter];
 			} else {
 				$content = $originalText;
 			}
-
 			// replace @words with twitter links to profiles
-			$content = preg_replace("#@(\\w+)#um", "<a href=\"http://twitter.com/$1\">@$1</a>", $content);
-			
+			$content = preg_replace("#@(\\w+)#", "<a href=\"http://twitter.com/$1\">@$1</a>", $content);
+
+			//convert everything to utf8 (see dependency above)
+			$content = Encoding::toUTF8($content);
 			return $content;
 
 		}
