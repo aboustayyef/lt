@@ -12,17 +12,15 @@
 */
 
 Route::get('/test', function(){
-	return view('layouts.main');
+	return view('test');
 });
 
 
-Route::get('/', function(){
-	return redirect('/mps');
-});
+Route::get('/ajax/{group?}/{from?}/{to?}/{parameters?}', 'AjaxController@index');
+
+Route::get('/{group?}', 'streamController@index');
 
 Route::get('/mps', 'MpsController@index');
-
-Route::resource('session', 'SessionController', ['only'=>['create', 'destroy']]);
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

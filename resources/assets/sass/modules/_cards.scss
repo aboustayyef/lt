@@ -1,0 +1,16 @@
+ul.cards{
+	padding:0;
+	margin:0 auto;
+}
+
+li.card{
+	display: block;
+	list-style-type:none;
+	width:300px;
+	border:1px solid grey;
+	margin-bottom:10px;
+}
+
+.cardheader, .cardbody, .cardfooter{
+	padding:5px;
+}

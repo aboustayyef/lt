@@ -1,59 +1,79 @@
-<div class="tweet">
-	<div class="meta">
-		<a href="https://twitter.com/{{$tweet->username}}/status/{{$tweet->twitter_id}}">
-			<?php $time = new \Carbon\Carbon($tweet->tweet_date) ?>
-			{{$time->diffForHumans()}}
-		</a>
-	</div>
+<li class="card"
 
-	<div class="media">
-	  <div class="media-left">
-	      <a href="https://twitter.com/{{$tweet->username}}"><img class="media-object" src="{{$tweet->user_image}}" alt="Profile Pic"></a>
-	  </div>
-	  <div class="media-body">
-	    <h3>
-			@if($tweet->is_retweet == 1)
-				<small>{!!view('icons.retweetsvg')!!}  Retweeted By
-			@endif
-			{{$tweet->first_name}} {{$tweet->last_name}}
-				
-			@if($tweet->is_retweet == 1)
-				</small>
-			@endif
+<?php 
+//  Build metadata
+$subgroups = preg_split('#\s*,\s*#',$tweet->tweep_subgroups);
+foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . '="' . $subgroup . '" ';}?>
+>
 
-		</h3>
-	    <p>{!! $tweet->content !!}</p>
-		@if($tweet->media)
-			<div class="embeddedMedia">
-				<a href="https://twitter.com/{{$tweet->username}}/status/{{$tweet->twitter_id}}">
-					<img src="{{$tweet->media}}">
-				</a>
-			</div>
-		@endif
-	  </div>
-	</div>
-	
+<!-- Card Header -->
+<div class="cardheader">
+	@if($tweet->tweet_is_retweet)
+		<h4>{{$tweet->tweep_public_name}} Retweeted</h4>
+	@endif
+	<img class="tweep_thumb	@if($tweet->tweet_is_retweet)retweet @endif" src="{{$tweet->tweep_user_image}}" height="50px">
+	<h3>
+		@if(!$tweet->tweet_is_retweet){{$tweet->tweep_public_name}}<br>@endif
+		<small>{{'@' . $tweet->tweet_twitterHandle}}</small>
+	</h3>
 </div>
 
-{{-- 
-id: 30,
-mp_id: 30,
-twitter_id: "576700797641060352",
-content: "لقاء مع مصلحة الطلاب في حزب الكتائب اللبنانية في الذكرى العاشرة لثورة الأرز\n<a href=\"http://samygemayel.com/photos/1991/%D9%84%D9%82%D8%A7%D8%A1-%D9%85%D8%B9-%D9%85%D8%B5%D9%84%D8%AD%D8%A9-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D9%81%D9%8A-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A6%D8%A8-%D8%A7%D9%84%D9%84/\">samygemayel.com/photos/1991/%D…</a>",
-is_retweet: 0,
-username: "samygemayel",
-user_image: "http://pbs.twimg.com/profile_images/500013794517479426/SVdwfqj1_normal.jpeg",
-tweet_date: "2015-03-14 11:05:59",
-created_at: "2015-03-22 11:41:11",
-updated_at: "2015-03-22 11:41:11",
-media: null,
-first_name: "Samy",
-last_name: "Gemayel",
-gender: "Male",
-district: "Metn",
-twitterHandle: "samygemayel",
-party: "Kataeb Party",
-sect: "Maronite",
-age: 35
- --}}
 
+<!-- Card body -->
+<div class="cardbody">
+	<div class="metaInfo">
+        <div class="postedSince">
+          {{(new \Carbon\Carbon($tweet->tweet_created_at))->diffForHumans()}}
+		</div>
+		<ul class="retweets_and_favorites">
+			<li class="favorites">{{$tweet->tweet_favorites}}</li>
+			<li class="retweets">{{$tweet->tweet_retweets}}</li>
+		</ul>
+		
+
+		<?php 
+			// Detect language
+			$isArabic = \LebaneseTweets\Utilities\String::isMostlyArabic($tweet->tweet_content);
+		?>
+		
+		<div class="tweetContent @if($isArabic) arabic @endif">
+			{!!$tweet->tweet_content!!}
+		</div>
+		@if($tweet->tweet_media_height > 0)
+			<img src="{{$tweet->tweet_media}}" width="280" height="{{($tweet->tweet_media_height / $tweet->tweet_media_width)*280}}">
+		@endif
+	</div>
+</div>
+
+
+<!-- Card Footer -->
+<div class="cardfooter">
+	
+</div></li>
+
+
+
+
+{{-- 
+
+
+
+'tweets.id as tweet_id',
+	twitter_id',
+	tweet_content',
+	tweet_is_retweet',
+	tweep_user_image',
+	tweet_date',
+	tweet_created_at',
+	tweet_media',
+	tweet_favorites',
+	tweet_retweets',
+	tweet_popularity_score',
+	tweet_media_height',
+	tweet_media_width',
+	tweep_public_name',
+	tweep_twitterHandle',
+	tweep_subgroups'
+
+
+ --}}
