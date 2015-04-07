@@ -9,8 +9,83 @@ li.card{
 	width:300px;
 	border:1px solid grey;
 	margin-bottom:10px;
+	background:white;
+	border:1px solid $cardBorderColor;
 }
 
+div.cardheader{
+	h4{
+		margin:0;
+		margin-bottom:10px;
+		padding-bottom:10px;
+		border-bottom:1px solid rgb(231,231,231);
+	}
+	h3, h4{
+		color: #666;
+		margin-top: 10px;
+		font-weight: normal;
+		small{
+			color:#999;
+		}
+	}
+
+	overflow:auto;
+	background:$cardHeaderColor;
+	border-bottom:1px solid $cardBorderColor;
+	img.tweep_thumb{
+		float: left;
+		margin-right: 10px;
+		border-radius: 50%;
+		border:1px solid rgba(0,0,0,0.1);
+
+		&.retweet{
+			width:30px;
+			height:30px;
+		}
+	}
+}
+
+
+.cardbody .metaInfo{
+	font-size:12px;
+	.postedSince{
+		color: $mainColor;
+		display:inline-block;
+	}
+	.retweets_and_favorites{
+		padding:0;
+		width:100px;
+		float:right;
+		li{
+			list-style-type:none;
+			display:inline-block;
+		}
+	}
+	svg{
+		margin-right:3px;
+		margin-left:5px;
+	}
+}
+
+.cardbody .tweetContent{
+	margin-top:20px;
+	&.arabic{
+		text-align:right;
+		p{
+			font-size:18px;
+		}
+	}
+	p{
+		padding: 10px 10px;
+		font-size: 16px;
+		line-height: 25px;
+		color: rgba(0, 0, 0, 0.5);
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+}
+
+
 .cardheader, .cardbody, .cardfooter{
-	padding:5px;
+	padding:10px;
 }

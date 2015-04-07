@@ -12,6 +12,9 @@
 */
 
 Route::get('/test', function(){
+
+	// TO DO: CONVERT BEIRUT I, BEIRUT II and BEIRUT III to BEIRUT 1, BEIRUT 2, and BEIRUT 3 respectively
+
 	return view('test');
 });
 

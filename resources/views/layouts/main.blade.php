@@ -8,14 +8,12 @@
 </head>
 <body>
 
-	<div id="header">
-		<div id="logo"></div>
-		this is the slogan
-		<!-- To add: about menu -->
-	</div>
-
+@include('layouts.partials.topbar')
 
 	<div id="scrollingArea">
+
+			@include('layouts.partials.filters')
+
 			<ul class="cards">
 					@foreach($tweets as $tweet)
 						@include('partials.tweet')

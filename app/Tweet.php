@@ -19,7 +19,7 @@ class Tweet extends Model {
 		
 		$subgroupStructure = [
 			'politicians' => ['district', 'party', 'sect'],
-			'bloggers' => ['tag']
+			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
 		];
 
 		$tweetsQueryBuilder = \DB::table('tweets')
@@ -61,13 +61,16 @@ class Tweet extends Model {
 			}
 		}
 
-		// check for retweets
+		// check for retweets. shown by default;
 			if (($request->has('hide_retweets')) && ($request->get('hide_retweets') == 'yes')) {
 				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet',0);
 			}
 		
-		// check for replies		
-			if (($request->has('hide_replies')) && ($request->get('hide_replies') == 'yes')) {
+		// check for replies. hidden by default;	
+			if (($request->has('show_replies')) && ($request->get('show_replies') == 'yes')) {
+				#nothing (shows replies if we don't do anything)
+			}else{
+				// hides replies otherwise (ie most of the time)
 				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_reply',0);
 			}
 

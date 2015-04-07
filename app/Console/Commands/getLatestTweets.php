@@ -81,13 +81,20 @@ class getLatestTweets extends Command {
 					// if tweet doesn't exists, save it	
 					
 					$this->info('twitter_id: ' . $canonicalTweet->id);
-
-					if (Tweet::where('twitter_id', $canonicalTweet->id)->count() == 0 ) {
+					$currentTweetExists = Tweet::where('twitter_id', $canonicalTweet->id);
+					if ( $currentTweetExists->count() == 0 ) {
 						$tweetRecord = new Tweet();
 						$status = $tweetRecord->store($tweet, $tweep->id);
 						$this->info($status);
 					}else{
-						$this->comment('Tweet Already stored');
+						$currentTweet = $currentTweetExists->first();
+						$this->comment('Tweet Already stored. Updating Retweets and Faves');
+						$currentTweet->favorites = $canonicalTweet->favorite_count;
+						$currentTweet->retweets	= $canonicalTweet->retweet_count;
+						$this->popularity_score = $currentTweet->favorites + ($currentTweet->retweets * 2);
+
+						$currentTweet->save();
+						$this->comment('updated! Retweets: ' . $canonicalTweet->retweet_count . ', Faves: ' . $canonicalTweet->favorite_count);
 					}
 				}			
 				$this->info('Api Calls Remaining: '.$twitterClient->status());

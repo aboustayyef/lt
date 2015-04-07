@@ -10,7 +10,7 @@ use LebaneseTweets\Tweep;
 
 class streamController extends Controller {
 
-	private $allowedGroups = ['politicians','bloggers'];
+	private $allowedGroups = ['politicians','journalists'];
 
 	public function index(Request $request, $group = null){
 
@@ -23,7 +23,7 @@ class streamController extends Controller {
 		
 		$tweets = Tweet::query($group, 0, 20, $request);
 
-		return view('layouts.main')->with(array('tweets'=>$tweets, 'request',$request));
+		return view('layouts.main')->with(array('tweets'=>$tweets, 'request'=>$request, 'group'=>$group));
 
 	}
 

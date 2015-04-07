@@ -2,10 +2,10 @@ $(function(){
 
 	$(document).ready(function(){
 
-		// Center View
+		// fix View
 		ltApp.rearrange();
 
-		// ISOTOPE INITIALIZE
+		// initialize isotope
 		ltApp.$container.isotope({
 			itemSelector: '.card',
 			transitionDuration: 0,

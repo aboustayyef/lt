@@ -23,11 +23,11 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <div class="cardbody">
 	<div class="metaInfo">
         <div class="postedSince">
-          {{(new \Carbon\Carbon($tweet->tweet_created_at))->diffForHumans()}}
+          {{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}
 		</div>
 		<ul class="retweets_and_favorites">
-			<li class="favorites">{{$tweet->tweet_favorites}}</li>
-			<li class="retweets">{{$tweet->tweet_retweets}}</li>
+			<li class="favorites">@include('svgIcons.favorite'){{$tweet->tweet_favorites}}</li>
+			<li class="retweets">@include('svgIcons.retweet'){{$tweet->tweet_retweets}}</li>
 		</ul>
 		
 
@@ -37,7 +37,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 		?>
 		
 		<div class="tweetContent @if($isArabic) arabic @endif">
-			{!!$tweet->tweet_content!!}
+			<p>{!!$tweet->tweet_content!!}</p>
 		</div>
 		@if($tweet->tweet_media_height > 0)
 			<img src="{{$tweet->tweet_media}}" width="280" height="{{($tweet->tweet_media_height / $tweet->tweet_media_width)*280}}">
