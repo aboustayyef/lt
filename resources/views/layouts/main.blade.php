@@ -8,21 +8,22 @@
 </head>
 <body>
 
-@include('layouts.partials.topbar')
+<div class="fixed">
+	@include('layouts.partials.topbar')
+	@include('layouts.partials.menubar')	
+</div>
 
-	<div id="scrollingArea">
+<div class="inner">
+	<ul class="cards">
+	@include('layouts.partials.top5')
+	@foreach($tweets as $tweet)
+		@include('layouts.partials.tweet')
+	@endforeach
+</ul>
+</div>
 
-			@include('layouts.partials.filters')
-
-			<ul class="cards">
-					@foreach($tweets as $tweet)
-						@include('partials.tweet')
-					@endforeach
-			</ul>
 	
-	</div> <!-- /Scrolling Area -->
-
-	<script type="text/javascript" src="{{URL::asset('js/lebanesetweets-min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/lebanesetweets-min.js')}}"></script>
 </body>
 </html>
 

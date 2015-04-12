@@ -15,7 +15,8 @@ class Kernel extends ConsoleKernel {
 		'LebaneseTweets\Console\Commands\getLatestTweets',
 		'LebaneseTweets\Console\Commands\refreshListOfMps',
 		'LebaneseTweets\Console\Commands\importMpsToTweeps',
-		'LebaneseTweets\Console\Commands\importBloggersToTweeps'
+		'LebaneseTweets\Console\Commands\importBloggersToTweeps',
+		'LebaneseTweets\Console\Commands\getTweetDetails',
 	];
 
 	/**

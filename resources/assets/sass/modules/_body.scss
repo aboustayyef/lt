@@ -2,10 +2,12 @@ body{
 	background:$backgroundColor;
 }
 
+.inner{
+	margin:0 auto;
+}
 
 #scrollingArea{
-	margin-top:50px;
-	padding-top:40px;
+	padding-top:50px;
 	height:1200px;
 	overflow:scroll;
 	z-index: 10;

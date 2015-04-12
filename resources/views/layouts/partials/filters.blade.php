@@ -1,18 +1,9 @@
 {{-- Add code to choose which filter set based on data --}}
-
 <div id="filters">
 
-		<div id="categories">
-			<h2>Pick Category</h2>
-			<ul>
-				<li><a href=""></a>All</li>
-				<li><a href=""></a>Politicians</li>
-				<li><a href=""></a>Journalists</li>
-			</ul>
-		</div>
-			
-		<div>
-			<h2>Apply Filters</h2>
+		@include('layouts.partials.categories')
+
+		<div class="narrow_down">
 			<form>
 				{{-- Common Filters --}}
 				<div class="form-group">
@@ -20,8 +11,8 @@
 					<label for="show_replies">Show Replies</label>
 				</div>
 				<div class="form-group">
-			      	<input type="checkbox" selected="selected" name="hide_retweets" value="yes">
-					<label for="hide_retweets">Hide Retweets</label>
+			      	<input type="checkbox" name="show_retweets" value="yes">
+					<label for="show_retweets">Show Retweets</label>
 				</div>
 				<div class="form-group">
 			      	<input type="checkbox" name="show_images_only" value="yes">

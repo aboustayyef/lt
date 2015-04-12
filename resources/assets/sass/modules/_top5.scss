@@ -1,0 +1,50 @@
+.top5{
+
+	h3{
+		margin:0;
+		padding:20px 10px 40px 10px;
+		font-size:28px;
+		border-bottom:1px solid silver;
+		color:$mainColor;
+		background:$lightMainColor;
+		small{
+			color:#888;
+			font-size:12px;
+		}
+	}
+
+	.arabic{
+		text-align:right;
+	}
+
+	h4{
+		margin:0;
+		margin-left:60px;
+	}
+	ul{
+		margin:0;
+		padding:0;
+		&.retweets_and_favorites{
+			font-size:14px;
+			li{
+				display:inline-block;
+				svg{
+					margin-right:5px;
+				}
+				border-bottom:none;
+			}
+		}
+	}
+	li{
+		margin-top:10px;
+		list-style-type:none;
+		padding:9px;
+		div{
+			overflow:auto;
+		}
+		img.profile{
+			float:left;
+		}
+		border-bottom:1px solid silver;
+	}
+}

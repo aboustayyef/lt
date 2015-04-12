@@ -27,7 +27,6 @@ use \ForceUTF8\Encoding;
 
 		function parse(){
 
-
 			$retweeted = isset($this->tweet->retweeted_status) ? 1:0 ;
 			$canonicalTweet = $retweeted? $this->tweet->retweeted_status : $this->tweet;
 			$canonicalUser = $canonicalTweet->user;
@@ -59,9 +58,21 @@ use \ForceUTF8\Encoding;
 			} else {
 				$content = $originalText;
 			}
+
+			// remove Media URLs (if any)
+			$content = preg_replace('#http(s)?://t\\.co/\\w+#', "", $content);
+
 			// replace @words with twitter links to profiles
 			$content = preg_replace("#@(\\w+)#", "<a href=\"http://twitter.com/$1\">@$1</a>", $content);
 
+			// replace #Hashtags with twitter links to hashtags
+			if(count($canonicalTweet->entities->hashtags) > 0){
+				echo "We Have hashtags\n";
+				foreach ($canonicalTweet->entities->hashtags as $key => $hashtag) {
+					$content = preg_replace('#('.$hashtag->text.')#', "<a href=\"http://twitter.com/hashtag/$1\">$1</a>", $content);
+				}
+			}
+			//$content = preg_replace("#\#(\\w+)#", "<a href=\"http://twitter.com/hashtag/$1\">#$1</a>", $content);
 			//convert everything to utf8 (see dependency above)
 			$content = Encoding::toUTF8($content);
 			return $content;

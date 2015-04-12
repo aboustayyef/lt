@@ -5,7 +5,7 @@ class String
 	
 	public static function isMostlyArabic($string){
 	  
-	  $length = strlen($string);
+	  $length = strlen($string) + 0.001; //to avoid division by zero errors
 	  $latinCharacters = preg_match_all("/([ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz])/", $string);
 	  $ratioOfLatinCharacters = $latinCharacters / $length;
 	  

@@ -1,4 +1,4 @@
-<li class="card"
+<li class="card tweet"
 
 <?php 
 //  Build metadata
@@ -23,7 +23,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <div class="cardbody">
 	<div class="metaInfo">
         <div class="postedSince">
-          {{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}
+          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}</a>
 		</div>
 		<ul class="retweets_and_favorites">
 			<li class="favorites">@include('svgIcons.favorite'){{$tweet->tweet_favorites}}</li>
@@ -39,7 +39,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 		<div class="tweetContent @if($isArabic) arabic @endif">
 			<p>{!!$tweet->tweet_content!!}</p>
 		</div>
-		@if($tweet->tweet_media_height > 0)
+		@if(($tweet->tweet_media_height > 0 )&& ($tweet->tweet_media_width > 0))
 			<img src="{{$tweet->tweet_media}}" width="280" height="{{($tweet->tweet_media_height / $tweet->tweet_media_width)*280}}">
 		@endif
 	</div>

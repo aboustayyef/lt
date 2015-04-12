@@ -1,0 +1,49 @@
+@mixin active{
+	border-bottom:5px solid orange;
+	padding-bottom:10px;
+}
+
+
+#menubar{
+	position:relative;
+	background:white;
+	border-bottom:1px solid #DDD;
+	ul{
+		padding:0;
+		margin-top:0;
+		margin-bottom:0;
+	}
+	li{
+		display:inline-block;
+		padding:15px 15px;
+		a{
+			color:#555;
+		}
+		&.active{
+			@include active;
+		}
+		&:hover{
+			a{
+				text-decoration:none;
+			}
+			@include active;
+		}
+	}
+}
+
+#toggleFilter{
+	background:white;
+	position: absolute;
+	left: 0;
+	padding:15px;
+	a{
+		padding:10px;
+		background: $mainColor;
+		color:white;
+		border-radius:5px;
+		text-decoration:none;
+		&:hover{
+			background:darken($mainColor, 5);
+		}
+	}
+}

@@ -8,23 +8,11 @@ class Tweet extends Model {
 
 	protected $guarded = array('id', 'created_at', 'updated_at');
 
-	public function tweep(){
-		return $this->belongsTo('\LebaneseTweets\Tweep');
-	}
+	static $queryBuilder;
 
-
-	// This function build the query for tweets on several filter levels.
-
-	public static function query($group = null, $from = 0, $to = 20, $request=null){
-		
-		$subgroupStructure = [
-			'politicians' => ['district', 'party', 'sect'],
-			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
-		];
-
-		$tweetsQueryBuilder = \DB::table('tweets')
+	public static function initiateQuery(){
+			self::$queryBuilder = \DB::table('tweets')
 			->Join('tweeps','tweets.tweep_id','=', 'tweeps.id')
-			->orderBy('tweets.tweet_date','desc')
 			->select(	'tweets.id as tweet_id',
 						'tweets.twitter_id as twitter_id',
 						'tweets.content as tweet_content',
@@ -44,8 +32,25 @@ class Tweet extends Model {
 						'tweeps.subgroups as tweep_subgroups',
 						'tweets.is_reply as tweet_is_reply'
 		);
+	}
 
+	public function tweep(){
+		return $this->belongsTo('\LebaneseTweets\Tweep');
+	}
+
+	// This function build the query for tweets on several filter levels.
+
+	public static function query($group = null, $from = 0, $to = 20, $request=null){
+		
+		$subgroupStructure = [
+			'politicians' => ['district', 'party', 'sect'],
+			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
+		];
+		self::initiateQuery();
+		$tweetsQueryBuilder = self::$queryBuilder;
 		// Begin the filtering based on request parameters
+
+			$tweetsQueryBuilder = $tweetsQueryBuilder->orderBy('tweets.tweet_date','desc');
 
 		if ($group) {
 			
@@ -61,17 +66,20 @@ class Tweet extends Model {
 			}
 		}
 
-		// check for retweets. shown by default;
-			if (($request->has('hide_retweets')) && ($request->get('hide_retweets') == 'yes')) {
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet',0);
-			}
-		
 		// check for replies. hidden by default;	
 			if (($request->has('show_replies')) && ($request->get('show_replies') == 'yes')) {
 				#nothing (shows replies if we don't do anything)
 			}else{
 				// hides replies otherwise (ie most of the time)
 				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_reply',0);
+			}
+
+		// check for retweets. hidden by default;	
+			if (($request->has('show_retweets')) && ($request->get('show_retweets') == 'yes')) {
+				#nothing (shows retweets if we don't do anything)
+			}else{
+				// hides retweets otherwise (ie most of the time)
+				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet',0);
 			}
 
 		// check for show Images
@@ -122,7 +130,6 @@ class Tweet extends Model {
 				echo "could not save media\n";
 			}
 			
-			
 		}
 		
 		// popularity
@@ -137,6 +144,29 @@ class Tweet extends Model {
 		// return status;
 		$status = 'added tweet: http://twitter.com/'.$this->username.'/status/'.$this->twitter_id . ' F:'.$this->favorites.' R: '.$this->retweets;
 		return $status;
+	}
+
+
+
+	public function top($group=null, $hours=12, $howmany=5){
+		
+		self::initiateQuery();
+		$tweetsQueryBuilder = self::$queryBuilder;
+		
+		// narrow by group
+		if ($group) {
+			$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweeps.group', $group);
+		}
+
+		// remove retweets
+		$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet', 0);
+
+		// scope by time
+		$now = new \Carbon\Carbon;
+		$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.tweet_date','>', $now->subHours($hours));
+
+		$tweets = $tweetsQueryBuilder->orderBy('tweets.popularity_score', 'desc')->take($howmany)->get();
+		return $tweets;
 	}
 
 }

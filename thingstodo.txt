@@ -1,0 +1,9 @@
+
+x add buttons for choosing category..
+x add auto-load on scroll
+- style filters
+- make "replies" more precise
+- add extra boxes (like top 5 tweets)
+- add little flags for political parites and outfits
+- remove unclickable urls of twitter images
+- harvest links

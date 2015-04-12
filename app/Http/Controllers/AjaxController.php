@@ -18,7 +18,7 @@ class AjaxController extends Controller {
 		$tweets = Tweet::query($group, $from, $to, $request);
 
 		foreach ($tweets as $key => $tweet) {
-			$result .= view('partials.tweet')->with('tweet', $tweet);
+			$result .= view('layouts.partials.tweet')->with('tweet', $tweet);
 		}
 
 		return $result;
