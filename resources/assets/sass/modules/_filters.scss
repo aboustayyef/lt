@@ -1,10 +1,40 @@
 #filters{
-	margin:0 auto;
-	overflow:auto;
+	position:fixed;
+	left:-300px;
+	top:96px;
+	z-index:20;
+	background:$filtersBackground;
+	width:300px;
+	transition-duration: 0.3s;
+	&.active{
+		left:0;
+	}
+	.form-group{
+		width:100%;
+		margin-bottom:10px;
+		h3{
+			background:darken($filtersBackground,5);
+			padding:10px;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+	}
+	.form-controll{
+		padding:10px;
+		option{
+			width:250px;
+		}
+	}
+
+	input[type="submit"]{
+		  padding: 10px;
+		  background: darken($filtersBackground,20);
+		  border: 1px solid silver;
+		  border-radius: 4px;
+		  color:white;
+		  &:hover{
+		  	background: darken($filtersBackground,10);
+		  }
+	}
 }
 
-.form-group{
-	padding:20px;
-	padding-left:10px;
-	float:left;
-}

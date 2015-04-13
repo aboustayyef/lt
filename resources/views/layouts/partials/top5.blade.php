@@ -2,7 +2,7 @@
 	$topTweets = (new \LebaneseTweets\Tweet)->top($group);
 ?>
 <li class="card top5">
-	<h3>Top Tweets <small>in the last 12 hours</small></h3>
+	<h3>Top Recent Tweets @if($group)<small><br>( {{ 'In ' . $group }} )</small>@endif</h3>
 	<ul>
 		@foreach($topTweets as $topTweet)
 		<?php 
@@ -11,18 +11,23 @@
 		?>
 		<li>
 			<div>
-				<img class="profile" src="{{$topTweet->tweep_user_image}}" height="48" width="48" alt="">
-				<h4>{{'@'.$topTweet->tweep_twitterHandle}}</h4>
+				<img class="profile" src="{{$topTweet->tweep_user_image}}" height="24" width="24" alt="">
+				<h4>{{$topTweet->tweep_public_name}}</h4>
+			</div>
+			<a href="https://twitter.com/{{$topTweet->tweep_twitterHandle}}/status/{{$topTweet->twitter_id}}">
+			<div class="tweet @if($isArabic) arabic @endif"> 
 				<ul class="retweets_and_favorites">
 					<li class="favorites">@include('svgIcons.favorite'){{$topTweet->tweet_favorites}}</li>
 					<li class="retweets">@include('svgIcons.retweet'){{$topTweet->tweet_retweets}}</li>
-			</ul>
+				</ul>
+				@if(($topTweet->tweet_media_height > 0 )&& ($topTweet->tweet_media_width > 0))
+					<div class="preview">
+						<img src="{{$topTweet->tweet_media}}" height="150" width="{{($topTweet->tweet_media_width / $topTweet->tweet_media_height)*150}}">
+					</div>
+				@endif
+				<?php echo strip_tags($topTweet->tweet_content) ?>
 			</div>
-
-			<p @if($isArabic) class="arabic" @endif>
-				{!!$topTweet->tweet_content!!}
-				
-			</p>
+			</a>
 
 		</li>
 		@endforeach

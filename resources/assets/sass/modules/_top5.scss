@@ -2,13 +2,12 @@
 
 	h3{
 		margin:0;
-		padding:20px 10px 40px 10px;
+		padding:20px 10px 20px 10px;
 		font-size:28px;
-		border-bottom:1px solid silver;
-		color:$mainColor;
-		background:$lightMainColor;
+		color:white;
+		background:orange;
 		small{
-			color:#888;
+			color:darken(orange,20);
 			font-size:12px;
 		}
 	}
@@ -19,7 +18,7 @@
 
 	h4{
 		margin:0;
-		margin-left:60px;
+		margin-left:30px;
 	}
 	ul{
 		margin:0;
@@ -32,10 +31,35 @@
 					margin-right:5px;
 				}
 				border-bottom:none;
+				margin-top:0;
+
 			}
 		}
 	}
-	li{
+	li{	
+		a{
+			&:hover{
+				text-decoration:none;
+				.tweet{
+					background:darken(white,4);
+					border:1px solid silver;
+				}
+			}
+			.tweet{
+			color:#444;
+			margin-top:10px;
+			padding:10px;
+			border:1px solid darken(white,10);
+			overflow:auto;
+			div.preview{
+				float:left;
+				margin-right:10px;
+				max-width:100px;
+				overflow-x:hidden;
+				}
+			}
+		}
+		
 		margin-top:10px;
 		list-style-type:none;
 		padding:9px;
@@ -45,6 +69,5 @@
 		img.profile{
 			float:left;
 		}
-		border-bottom:1px solid silver;
 	}
 }

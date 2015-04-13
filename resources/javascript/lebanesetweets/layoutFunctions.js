@@ -14,15 +14,14 @@ $(function(){
 	// change height of scrollable area to fill screen
 
 	ltApp.fixHeight = function(){
-		$('.cards').height(window.innerHeight - 100);
-		$('.narrow_down').height(window.innerHeight - 100);
+		$('#filters').height(window.innerHeight - 100);
 	};
 
 	// function that does all the above
 
 	ltApp.rearrange = function(){
 		ltApp.centerAll();
-		//ltApp.fixHeight();
+		ltApp.fixHeight();
 	};
 
 });

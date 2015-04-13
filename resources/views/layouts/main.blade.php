@@ -12,7 +12,9 @@
 	@include('layouts.partials.topbar')
 	@include('layouts.partials.menubar')	
 </div>
+@include('layouts.partials.filters')
 
+<div id="curtain"></div>
 <div class="inner">
 	<ul class="cards">
 	@include('layouts.partials.top5')
