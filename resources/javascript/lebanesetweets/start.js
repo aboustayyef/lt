@@ -5,6 +5,7 @@ $(function(){
 		// fix View
 		ltApp.rearrange();
 		$('#curtain').hide();
+
 		// initialize isotope
 		ltApp.$container.isotope({
 			itemSelector: '.card',

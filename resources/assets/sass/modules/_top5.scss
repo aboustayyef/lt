@@ -4,11 +4,11 @@
 		margin:0;
 		padding:20px 10px 20px 10px;
 		font-size:28px;
-		color:white;
-		background:orange;
+		color:$mainColor;
 		small{
-			color:darken(orange,20);
-			font-size:12px;
+			font-size:60%;
+			color:$mainColor;
+			opacity:0.5;
 		}
 	}
 
@@ -46,6 +46,7 @@
 				}
 			}
 			.tweet{
+			margin-left:30px;
 			color:#444;
 			margin-top:10px;
 			padding:10px;

@@ -14,7 +14,7 @@ $(function(){
 	// change height of scrollable area to fill screen
 
 	ltApp.fixHeight = function(){
-		$('#filters').height(window.innerHeight - 100);
+		$('#filters').height(window.innerHeight - 90);
 	};
 
 	// function that does all the above

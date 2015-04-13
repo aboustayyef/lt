@@ -3,14 +3,14 @@
 			<form>
 				{{-- Common Filters --}}
 				<div class="form-group">
-					<h3>General Filters</h3>
+					<h4>General Filters</h4>
 					<div class="form-controll">
 				      	<input type="checkbox" name="show_replies" value="yes">
-						<label for="show_replies">Show Replies</label>
+						<label for="show_replies">Show Replies <small>Hidden by Default</small></label>
 					</div>
 					<div class="form-controll">
 				      	<input type="checkbox" name="show_retweets" value="yes">
-						<label for="show_retweets">Show Retweets</label>
+						<label for="show_retweets">Show Retweets <small>Hidden by Default</small></label>
 					</div>
 					<div class="form-controll">
 				      	<input type="checkbox" name="show_images_only" value="yes">
@@ -30,7 +30,7 @@
 				
 				@if($group == 'politicians')
 					<div class="form-group">
-						<h3>Filters for Politicians</h3>
+						<h4>Filters for Politicians</h4>
 						<div class="form-controll">
 							<select name="district">
 							  <option value="" disabled selected>District</option>
@@ -61,7 +61,7 @@
 
 				@if($group == 'journalists')
 					<div class="form-group">
-						<h3>Filters for Journalists</h3>
+						<h4>Filters for Journalists</h4>
 						<div class="form-controll">
 							<select name="outfit">
 							  <option value="" disabled selected>Outfit</option>
