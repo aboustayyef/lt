@@ -26,8 +26,8 @@
 </ul>
 </div>
 
+@include('layouts.partials.footer')
 	
-<script type="text/javascript" src="{{URL::asset('js/lebanesetweets-min.js')}}"></script>
 </body>
 </html>
 
