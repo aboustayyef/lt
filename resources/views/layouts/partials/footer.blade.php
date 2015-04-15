@@ -1,7 +1,6 @@
 
 <!-- Lebanese Tweets  js -->
 <script type="text/javascript" src="{{URL::asset('js/lebanesetweets-min.js')}}"></script>
-
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=10356564; 

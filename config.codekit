@@ -919,6 +919,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/resources\/javascript\/lebanesetweets\/toggle_categories.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/javascript\/lebanesetweets\/toggle_categories.js",
+		"outputAbbreviatedPath": "\/resources\/javascript\/lebanesetweets\/min\/toggle_categories-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 0
+		},
 	"\/resources\/javascript\/lebanesetweets\/toggle_filters.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1065,6 +1076,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resources\/views\/layouts\/partials\/filters.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources\/views\/layouts\/partials\/footer.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/layouts\/partials\/footer.blade.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1222,15 +1242,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/bin\/classpreloader.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/bin\/classpreloader.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/vendor\/classpreloader\/classpreloader\/classpreloader.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1335,6 +1346,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/classpreloader\/classpreloader\/src\/Parser\/NodeTraverser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/compiled.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/compiled.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

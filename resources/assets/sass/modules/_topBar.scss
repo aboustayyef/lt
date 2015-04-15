@@ -31,4 +31,7 @@
 		font:bold;
 		color:white;
 	}
+	@media all and (max-width:630px){
+		display:none;
+	}
 }

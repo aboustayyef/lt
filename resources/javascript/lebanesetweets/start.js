@@ -6,6 +6,10 @@ $(function(){
 		ltApp.rearrange();
 		$('#curtain').hide();
 
+		
+		ltApp.$container = $('.cards');
+
+
 		// initialize isotope
 		ltApp.$container.isotope({
 			itemSelector: '.card',

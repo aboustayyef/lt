@@ -7,7 +7,8 @@
 	
 	<title>@yield('title')</title>
 	<meta name="description" content="@yield('description')">
-
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
 	<link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/lebanesetweets.css?v=1') }}" rel="stylesheet">
 </head>

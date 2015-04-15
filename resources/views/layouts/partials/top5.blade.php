@@ -22,7 +22,7 @@
 				</ul>
 				@if(($topTweet->tweet_media_height > 0 )&& ($topTweet->tweet_media_width > 0))
 					<div class="preview">
-						<img src="{{$topTweet->tweet_media}}" height="150" width="{{($topTweet->tweet_media_width / $topTweet->tweet_media_height)*150}}">
+						<img src="{{$topTweet->tweet_media}}" height="60" width="{{($topTweet->tweet_media_width / $topTweet->tweet_media_height)*60}}">
 					</div>
 				@endif
 				<?php echo strip_tags($topTweet->tweet_content) ?>

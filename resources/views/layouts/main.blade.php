@@ -1,21 +1,44 @@
+@section('title')
+
+	@if($group=="journalists")
+		Latest Tweets By Lebanese Journalists
+	@elseif($group=="politicians")
+		Latest Tweets By Lebanese Politicans
+	@else
+		Latest Lebanese Tweets by Journalists and Politicans
+	@endif
+
+@stop
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 	<title>@yield('title')</title>
-	<link rel="stylesheet" href="{{URL::asset('css/lebanesetweets.css')}}">
+	<link rel="stylesheet" href="{{URL::asset('css/lebanesetweets.css?v=1.00')}}">
 </head>
 <body>
+	<script>
+		// Initialization.
+		if ( typeof ltApp != 'object'){
+			var ltApp = {};
+			ltApp.webRoot = "{{URL::to('/')}}";
+			console.log(ltApp.webRoot);
+			ltApp.updating = false;
+			ltApp.tweetsLoaded = 20; // initial count;
+	    }
+    </script>
+<div id="curtain"></div>
 
 <div class="fixed">
 	@include('layouts.partials.topbar')
 	@include('layouts.partials.menubar')
 </div>
+<div id="scrollingArea">
 @include('layouts.partials.filters')
-
-<div id="curtain"></div>
-@include('layouts.partials.filterbutton')
 
 <div class="inner">
 	<ul class="cards">
@@ -27,7 +50,7 @@
 </div>
 
 @include('layouts.partials.footer')
-	
+</div> <!--/scrollingArea-->
 </body>
 </html>
 

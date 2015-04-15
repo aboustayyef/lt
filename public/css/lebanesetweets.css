@@ -131,7 +131,7 @@ a:hover { text-decoration: underline; }
 
 #curtain { width: 100%; position: fixed; height: 100%; background: white; z-index: 10000000; top: 0; }
 
-ul.cards { padding: 0; margin: 0 auto; margin-top: 140px; }
+ul.cards { padding: 0; margin: 0 auto; margin-top: 20px; }
 
 li.card { display: block; list-style-type: none; width: 300px; border: 1px solid grey; margin-bottom: 10px; background: white; border: 1px solid #b3b3b3; }
 
@@ -163,14 +163,15 @@ div.cardheader img.tweep_thumb.retweet { width: 30px; height: 30px; }
 
 .aboutlt { width: 200px; font-size: 12px; line-height: 15px; margin-top: 12px; float: left; color: #D0D8E4; }
 .aboutlt strong { font: bold; color: white; }
+@media all and (max-width: 630px) { .aboutlt { display: none; } }
 
 body { background: #d1d1d1; position: absolute; width: 100%; }
 
 .inner { margin: 0 auto; }
 
-#scrollingArea { padding-top: 50px; height: 1200px; overflow: scroll; z-index: 10; }
+#scrollingArea { position: fixed; top: 99px; width: 100%; padding: 0; margin: 0; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
 
-#filters { position: fixed; left: -297px; top: 96px; z-index: 20; border-right: 3px solid #007A96; background: #C4CDCF; width: 300px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
+#filters { position: fixed; left: -299px; top: 99px; z-index: 20; border-right: 1px solid #007A96; background: #C4CDCF; width: 300px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
 #filters.active { left: 0; }
 #filters .form-group { width: 100%; margin-bottom: 20px; }
 #filters .form-group h4 { background: #a8b5b8; padding: 10px; margin-top: 0; margin-bottom: 10px; }
@@ -180,19 +181,14 @@ body { background: #d1d1d1; position: absolute; width: 100%; }
 #filters input[type="submit"] { padding: 10px; background: #007A96; border-radius: 4px; border: none; color: white; width: 70%; }
 #filters input[type="submit"]:hover { background: #005163; }
 
-#menubar { position: relative; background: white; border-bottom: 1px solid #8E8E8E; }
-#menubar ul { padding: 0; margin-top: 0; margin-bottom: 0; }
-#menubar li { display: inline-block; padding: 15px 15px; }
-#menubar li a { color: #555; }
-#menubar li.active { border-bottom: 5px solid orange; padding-bottom: 10px; }
-#menubar li:hover { border-bottom: 5px solid orange; padding-bottom: 10px; }
-#menubar li:hover a { text-decoration: none; }
+#menubar { position: relative; background: white; border-bottom: 1px solid #8E8E8E; padding: 8px; }
+#menubar select { -webkit-appearance: none; -moz-appearance: none; -appearance: none; padding: 7px; cursor: pointer; outline: none; color: #007A96; }
 
 #toggleFilter { background: white; position: absolute; left: 0; padding: 15px; }
 #toggleFilter a { padding: 10px; background: #007A96; color: white; border-radius: 5px; text-decoration: none; }
 #toggleFilter a:hover { background: #00657d; }
 
-#filters { position: fixed; left: -297px; top: 96px; z-index: 20; border-right: 3px solid #007A96; background: #C4CDCF; width: 300px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
+#filters { position: fixed; left: -299px; top: 99px; z-index: 20; border-right: 1px solid #007A96; background: #C4CDCF; width: 300px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
 #filters.active { left: 0; }
 #filters .form-group { width: 100%; margin-bottom: 20px; }
 #filters .form-group h4 { background: #a8b5b8; padding: 10px; margin-top: 0; margin-bottom: 10px; }
@@ -202,12 +198,11 @@ body { background: #d1d1d1; position: absolute; width: 100%; }
 #filters input[type="submit"] { padding: 10px; background: #007A96; border-radius: 4px; border: none; color: white; width: 70%; }
 #filters input[type="submit"]:hover { background: #005163; }
 
-.filterButton { position: relative; }
-.filterButton button { position: absolute; right: 10px; top: 102px; /* margin: 102px 10px 0 10px; */ padding: 7px 10px; background: #007A96; border: 1px solid silver; color: white; border-radius: 5px; border-bottom: 1px solid #005163; border-top: 1px solid #DAFDFF; }
+.filterButton { float: right; margin-right: 10px; }
+.filterButton button { padding: 7px 10px; background: #007A96; border: 1px solid silver; color: white; border-radius: 5px; border-bottom: 1px solid #005163; border-top: 1px solid #DAFDFF; }
 .filterButton button.active { border-bottom: 1px solid #DAFDFF; border-top: 1px solid #005163; background: #00657d; }
 .filterButton button:focus { outline: none; }
 .filterButton button svg { fill: #00a3c9; }
-.filterButton #tryme { position: absolute; right: 109px; top: 90px; color: #9b9b9b; }
 
 .top5 h3 { margin: 0; padding: 20px 10px 20px 10px; font-size: 28px; color: #007A96; }
 .top5 h3 small { font-size: 60%; color: #007A96; opacity: 0.5; }
@@ -220,7 +215,7 @@ body { background: #d1d1d1; position: absolute; width: 100%; }
 .top5 li { margin-top: 10px; list-style-type: none; padding: 9px; }
 .top5 li a:hover { text-decoration: none; }
 .top5 li a:hover .tweet { background: whitesmoke; border: 1px solid silver; }
-.top5 li a .tweet { margin-left: 30px; color: #444; margin-top: 10px; padding: 10px; border: 1px solid #e6e6e6; overflow: auto; }
-.top5 li a .tweet div.preview { float: left; margin-right: 10px; max-width: 100px; overflow-x: hidden; }
+.top5 li a .tweet { margin-left: 10px; color: #444; margin-top: 10px; padding: 10px; border: 1px solid #e6e6e6; overflow: auto; }
+.top5 li a .tweet div.preview { float: left; margin-right: 10px; max-width: 100px; max-height: 100px; overflow-x: hidden; }
 .top5 li div { overflow: auto; }
 .top5 li img.profile { float: left; }

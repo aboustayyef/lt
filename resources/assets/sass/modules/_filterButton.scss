@@ -1,10 +1,7 @@
 .filterButton{
-	position:relative;
+	float:right;
+	margin-right:10px;
 	button{
-		position: absolute;
-		right: 10px;
-		top: 102px;
-		/* margin: 102px 10px 0 10px; */
 		padding: 7px 10px;
 		background: #007A96;
 		border: 1px solid silver;
@@ -24,11 +21,5 @@
 		svg{
 			fill: lighten($mainColor, 10);
 		}
-	}
-	#tryme{
-		position: absolute;
-		right: 109px;
-		top: 90px;
-		color: rgb(155, 155, 155);
 	}
 }
