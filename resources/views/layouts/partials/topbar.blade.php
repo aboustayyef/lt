@@ -1,6 +1,6 @@
 <div id="topbar">
 	<div class="inner">
-		<div id="logo"></div>
+		<a href="/"><div id="logo"></div></a>
 		<div class="aboutlt">
 			The best place to <strong>read</strong> and <strong>discover</strong> Lebanon's top Tweets 
 		</div>
