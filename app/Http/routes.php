@@ -24,6 +24,8 @@ Route::get('/{group?}', 'streamController@index');
 
 Route::get('/mps', 'MpsController@index');
 
+Route::resource('tweeps','TweepsController');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
