@@ -8,13 +8,13 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 
 <!-- Card Header -->
 <div class="cardheader">
-	@if($tweet->tweet_is_retweet)
+	@if($tweet->is_retweet)
 		<h4>{{$tweet->tweep_public_name}} Retweeted</h4>
 	@endif
-	<img class="tweep_thumb	@if($tweet->tweet_is_retweet)retweet @endif" src="{{$tweet->tweep_user_image}}" height="50px">
+	<img class="tweep_thumb	@if($tweet->is_retweet)retweet @endif" src="{{$tweet->user_image}}" height="50px">
 	<h3>
-		@if(!$tweet->tweet_is_retweet){{$tweet->tweep_public_name}}<br>@endif
-		<small>{{'@' . $tweet->tweet_twitterHandle}}</small>
+		@if(!$tweet->is_retweet){{$tweet->tweep_public_name}}<br>@endif
+		<small>{{'@' . $tweet->twitterHandle}}</small>
 	</h3>
 	@if($group=="")
 		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
@@ -29,24 +29,24 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <div class="cardbody">
 	<div class="metaInfo">
         <div class="postedSince">
-          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}</a>
+          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->date))->diffForHumans()}}</a>
 		</div>
 		<ul class="retweets_and_favorites">
-			<li class="favorites">@include('svgIcons.favorite'){{$tweet->tweet_favorites}}</li>
-			<li class="retweets">@include('svgIcons.retweet'){{$tweet->tweet_retweets}}</li>
+			<li class="favorites">@include('svgIcons.favorite'){{$tweet->favorites}}</li>
+			<li class="retweets">@include('svgIcons.retweet'){{$tweet->retweets}}</li>
 		</ul>
 		
 
 		<?php 
 			// Detect language
-			$isArabic = \LebaneseTweets\Utilities\String::isMostlyArabic($tweet->tweet_content);
+			$isArabic = \LebaneseTweets\Utilities\String::isMostlyArabic($tweet->content);
 		?>
 		
 		<div class="tweetContent @if($isArabic) arabic @endif">
-			<p>{!!$tweet->tweet_content!!}</p>
+			<p>{!!$tweet->content!!}</p>
 		</div>
-		@if(($tweet->tweet_media_height > 0 )&& ($tweet->tweet_media_width > 0))
-			<img src="{{$tweet->tweet_media}}" width="280" height="{{($tweet->tweet_media_height / $tweet->tweet_media_width)*280}}">
+		@if(($tweet->media_height > 0 )&& ($tweet->media_width > 0))
+			<img src="{{$tweet->media}}" width="280" height="{{($tweet->media_height / $tweet->media_width)*280}}">
 		@endif
 	</div>
 </div>

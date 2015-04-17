@@ -21,7 +21,7 @@ class streamController extends Controller {
 			return \Redirect::to('/');
 		}
 		
-		$tweets = Tweet::query($group, 0, 20, $request);
+		$tweets = (New Tweet)->makeQuery($group, 0, 20, $request);
 
 		return view('layouts.main')->with(array('tweets'=>$tweets, 'request'=>$request, 'group'=>$group));
 

@@ -15,7 +15,7 @@ class AjaxController extends Controller {
 		
 		$result = '';
 
-		$tweets = Tweet::query($group, $from, $to, $request);
+		$tweets = (New Tweet)->makeQuery($group, $from, $to, $request);
 
 		foreach ($tweets as $key => $tweet) {
 			echo '<h1>'.$group.'</h1>';

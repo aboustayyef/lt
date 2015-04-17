@@ -8,32 +8,6 @@ class Tweet extends Model {
 
 	protected $guarded = array('id', 'created_at', 'updated_at');
 
-	static $queryBuilder;
-
-	public static function initiateQuery(){
-			self::$queryBuilder = \DB::table('tweets')
-			->Join('tweeps','tweets.tweep_id','=', 'tweeps.id')
-			->select(	'tweets.id as tweet_id',
-						'tweets.twitter_id as twitter_id',
-						'tweets.content as tweet_content',
-						'tweets.is_retweet as tweet_is_retweet',
-						'tweets.user_image as tweep_user_image',
-						'tweets.tweet_date as tweet_date',
-						'tweets.created_at as tweet_created_at',
-						'tweets.media as tweet_media',
-						'tweets.favorites as tweet_favorites',
-						'tweets.retweets as tweet_retweets',
-						'tweets.popularity_score as tweet_popularity_score',
-						'tweets.media_height as tweet_media_height',
-						'tweets.media_width as tweet_media_width',
-						'tweeps.public_name as tweep_public_name',
-						'tweeps.twitterHandle as tweep_twitterHandle',
-						'tweets.username as tweet_twitterHandle',
-						'tweeps.subgroups as tweep_subgroups',
-						'tweets.is_reply as tweet_is_reply',
-						'tweeps.group as tweep_group'
-		);
-	}
 
 	public function tweep(){
 		return $this->belongsTo('\LebaneseTweets\Tweep');
@@ -41,28 +15,25 @@ class Tweet extends Model {
 
 	// This function build the query for tweets on several filter levels.
 
-	public static function query($group = null, $from = 0, $to = 20, $request=null){
+	public function makeQuery($group = null, $from = 0, $to = 20, $request=null){
 		
 		$subgroupStructure = [
 			'politicians' => ['district', 'party', 'sect'],
 			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
 		];
-		self::initiateQuery();
-		$tweetsQueryBuilder = self::$queryBuilder;
-		// Begin the filtering based on request parameters
 
-			$tweetsQueryBuilder = $tweetsQueryBuilder->orderBy('tweets.tweet_date','desc');
+			$tweetsQueryBuilder = $this->orderBy('tweet_date','desc');
 
 		if ($group) {
 			
-			$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweeps.group', $group);
+			$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweep_group', $group);
 		
 			// check for subgroup-speficific filters
 			
 			$subgroups = $subgroupStructure[$group];
 			foreach ($subgroups as $key => $subgroup) {
 				if ($request->has($subgroup)){
-					$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweeps.subgroups','LIKE', '%' . $request->get($subgroup) . '%');
+					$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweep_subgroups','LIKE', '%' . $request->get($subgroup) . '%');
 				}
 			}
 		}
@@ -72,7 +43,7 @@ class Tweet extends Model {
 				#nothing (shows replies if we don't do anything)
 			}else{
 				// hides replies otherwise (ie most of the time)
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_reply',0);
+				$tweetsQueryBuilder = $tweetsQueryBuilder->where('is_reply',0);
 			}
 
 		// check for retweets. hidden by default;	
@@ -80,12 +51,12 @@ class Tweet extends Model {
 				#nothing (shows retweets if we don't do anything)
 			}else{
 				// hides retweets otherwise (ie most of the time)
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet',0);
+				$tweetsQueryBuilder = $tweetsQueryBuilder->where('is_retweet',0);
 			}
 
 		// check for show Images
 			if (($request->has('show_images_only')) && ($request->get('show_images_only') == 'yes')) {
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.media_height','>',0);
+				$tweetsQueryBuilder = $tweetsQueryBuilder->where('media_height','>',0);
 			}
 
 		$tweets = $tweetsQueryBuilder->skip($from)->take($to - $from)->get();
@@ -139,6 +110,13 @@ class Tweet extends Model {
 		$this->retweets	= $canonicalTweet->retweet_count;
 		$this->popularity_score = $this->favorites + ($this->retweets * 2);
 
+
+		// Tweep details
+		$this->tweep_public_name = $this->tweep->public_name;
+		$this->tweep_twitterHandle = $this->tweep->twitterHandle;
+		$this->tweep_subgroups = $this->tweep->subgroups;
+		$this->tweep_group = $this->tweep->group;
+
 		// save it
 		$this->save();
 
@@ -151,22 +129,21 @@ class Tweet extends Model {
 
 	public function top($group=null, $hours=12, $howmany=5){
 		
-		self::initiateQuery();
-		$tweetsQueryBuilder = self::$queryBuilder;
+		$tweetsQueryBuilder = $this;
 		
 		// narrow by group
 		if ($group) {
-			$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweeps.group', $group);
+			$tweetsQueryBuilder = $this->where('tweep_group', $group);
 		}
 
 		// remove retweets
-		$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.is_retweet', 0);
+		$tweetsQueryBuilder = $tweetsQueryBuilder->where('is_retweet', 0);
 
 		// scope by time
 		$now = new \Carbon\Carbon;
-		$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweets.tweet_date','>', $now->subHours($hours));
+		$tweetsQueryBuilder = $tweetsQueryBuilder->where('tweet_date','>', $now->subHours($hours));
 
-		$tweets = $tweetsQueryBuilder->orderBy('tweets.popularity_score', 'desc')->take($howmany)->get();
+		$tweets = $tweetsQueryBuilder->orderBy('popularity_score', 'desc')->take($howmany)->get();
 		return $tweets;
 	}
 
