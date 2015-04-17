@@ -141,6 +141,7 @@ div.cardheader h3, div.cardheader h4 { color: #666; margin-top: 10px; font-weigh
 div.cardheader h3 small, div.cardheader h4 small { color: #999; }
 div.cardheader img.tweep_thumb { float: left; margin-right: 10px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); }
 div.cardheader img.tweep_thumb.retweet { width: 30px; height: 30px; }
+div.cardheader img.groupicon { position: absolute; top: 10px; right: 10px; }
 
 .cardbody .metaInfo { font-size: 12px; }
 .cardbody .metaInfo .postedSince { color: #007A96; display: inline-block; }

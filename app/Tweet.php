@@ -30,7 +30,8 @@ class Tweet extends Model {
 						'tweeps.twitterHandle as tweep_twitterHandle',
 						'tweets.username as tweet_twitterHandle',
 						'tweeps.subgroups as tweep_subgroups',
-						'tweets.is_reply as tweet_is_reply'
+						'tweets.is_reply as tweet_is_reply',
+						'tweeps.group as tweep_group'
 		);
 	}
 

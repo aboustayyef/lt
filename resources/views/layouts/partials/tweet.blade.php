@@ -16,6 +16,12 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 		@if(!$tweet->tweet_is_retweet){{$tweet->tweep_public_name}}<br>@endif
 		<small>{{'@' . $tweet->tweet_twitterHandle}}</small>
 	</h3>
+	@if($group=="")
+		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
+		<a href="/{{$tweetgroup}}">
+			<img class="groupicon" src="{{URL::asset('img/groupicons/' . $tweetgroup . '.png')}}" width="30" height="30" alt="show {{$tweetgroup}} only" title="show {{$tweetgroup}} only">		
+		</a>
+	@endif
 </div>
 
 
@@ -73,7 +79,8 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 	tweet_media_width',
 	tweep_public_name',
 	tweep_twitterHandle',
-	tweep_subgroups'
+	tweep_subgroups',
+	tweep_group,
 
 
  --}}
