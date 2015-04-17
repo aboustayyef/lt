@@ -14,7 +14,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 	<img class="tweep_thumb	@if($tweet->is_retweet)retweet @endif" src="{{$tweet->user_image}}" height="50px">
 	<h3>
 		@if(!$tweet->is_retweet){{$tweet->tweep_public_name}}<br>@endif
-		<small>{{'@' . $tweet->twitterHandle}}</small>
+		<small>{{'@' . $tweet->tweep_twitterHandle}}</small>
 	</h3>
 	@if($group=="")
 		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
@@ -29,7 +29,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <div class="cardbody">
 	<div class="metaInfo">
         <div class="postedSince">
-          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}</a>
+          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->date))->diffForHumans()}}</a>
 		</div>
 		<ul class="retweets_and_favorites">
 			<li class="favorites">@include('svgIcons.favorite'){{$tweet->favorites}}</li>
