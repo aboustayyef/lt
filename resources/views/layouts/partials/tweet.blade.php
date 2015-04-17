@@ -19,7 +19,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 	@if($group=="")
 		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
 		<a href="/{{$tweetgroup}}">
-			<img class="groupicon" src="{{URL::asset('img/groupicons/' . $tweetgroup . '.png')}}" width="30" height="30" alt="show {{$tweetgroup}} only" title="show {{$tweetgroup}} only">		
+			<img class="groupicon" src="{{URL::asset('img/groupicons/' . $tweetgroup . '.png')}}" width="30" height="30" alt="show {{$tweetgroup}} only" title="{{$tweetgroup}}. Click to show {{$tweetgroup}} only">		
 		</a>
 	@endif
 </div>
