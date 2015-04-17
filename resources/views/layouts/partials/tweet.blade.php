@@ -29,7 +29,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <div class="cardbody">
 	<div class="metaInfo">
         <div class="postedSince">
-          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->date))->diffForHumans()}}</a>
+          <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}</a>
 		</div>
 		<ul class="retweets_and_favorites">
 			<li class="favorites">@include('svgIcons.favorite'){{$tweet->favorites}}</li>
