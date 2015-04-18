@@ -102,6 +102,36 @@ class Tweet extends Model {
 				echo "could not save media\n";
 			}
 			
+		} else {
+			#Check if there's an instagram link
+			echo "Looking for instagram image \n";
+			preg_match('#(instagram\.com/[\w/]+)#', $this->content, $result);
+			
+			if (count($result) > 1) {
+				$instagramPage = "https://".$result[1];
+				echo "We found and instagram image at $instagramPage \n";
+
+				$instagramScraper = new \LebaneseTweets\Utilities\InstagramScraper($instagramPage);
+				if ($instagramImage = $instagramScraper->image()) {
+					echo "The Instagram Image is at $instagramImage\n";
+					$imageName = md5($instagramImage) . '.jpg';
+					$directory = public_path() . '/img/cache/';
+					$destination = $directory . $imageName;
+					echo "Destination: $destination \n";
+					$imagick = new \iMagick($instagramImage);
+					$imagick->thumbnailImage(400,0);
+					$imagick->writeImage($destination);
+
+					$this->media = 'img/cache/' . $imageName ;
+					$this->media_width = 400;
+					$this->media_height = 400;
+
+					## TO DO ##
+					## STORE IMAGE SOURCE TO MEDIA
+				}
+			}
+			#save cache
+			#store link to cached media and dimensions 400 x 400
 		}
 		
 		// popularity
