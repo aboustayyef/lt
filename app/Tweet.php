@@ -1,7 +1,6 @@
 <?php namespace LebaneseTweets;
 
 use Illuminate\Database\Eloquent\Model;
-use LebaneseTweets\Utilities\TweetContentParser;
 use \Carbon\Carbon;
 
 class Tweet extends Model {
