@@ -3,3 +3,5 @@
 .env
 .DS_Store
 resources/assets/sass/.sass-cache/*
+
+public/img/cache/*.jpg
