@@ -47,6 +47,11 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 		</div>
 		@if(($tweet->media_height > 0 )&& ($tweet->media_width > 0))
 			<img src="{{$tweet->media}}" width="280" height="{{($tweet->media_height / $tweet->media_width)*280}}">
+		@elseif($tweet->link)
+			<hr>
+			<img src="{{$tweet->link->image}}" width="{{$tweet->link->image_width}}" height="{{$tweet->link->image_height}}">
+			<h4>{{$tweet->link->title}}</h4>
+			<p>{{$tweet->link->excerpt}}</p>
 		@endif
 	</div>
 </div>
