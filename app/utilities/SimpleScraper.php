@@ -124,6 +124,56 @@ class SimpleScraper {
 	public function getTwitter() {
 		return $this->data['twitter'];
 	}
+
+/*===========================================================================*/
+// Mustapha Added Methods
+/*===========================================================================*/
+
+
+/*
+*
+*
+* @return string
+ */
+public function getDescription(){
+	$candidates = [$this->data['ogp']['description'], $this->data['twitter']['description'], $this->data['meta']['Description']];
+	foreach ($candidates as $key => $description) {
+		if (strlen($description) > 10 ) {
+			return $description;
+		}
+	}
+	return false;
+}
+
+/*
+*
+*
+* @return string
+ */
+public function getImage(){
+	$candidates = [$this->data['ogp']['image'], $this->data['twitter']['image']];
+	foreach ($candidates as $key => $image) {
+		if (strlen($image) > 10 ) {
+			return $image;
+		}
+	}
+	return false;
+}
+
+/*
+*
+*
+* @return string
+ */
+public function getTitle(){
+	$candidates = [$this->data['ogp']['title'], $this->data['twitter']['title']];
+	foreach ($candidates as $key => $title) {
+		if (strlen($title) > 4 ) {
+			return $title;
+		}
+	}
+	return false;
+}
 	
 /*===========================================================================*/
 // PRIVATE METHODS
