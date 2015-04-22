@@ -19,10 +19,12 @@ use \ForceUTF8\Encoding;
 	{
 		
 		private $tweet;
+		public $lastUrl;
 
 		function __construct($tweet)
 		{
 			$this->tweet = $tweet;
+			$this->lastUrl = false;
 		}
 
 		function parse(){
@@ -52,6 +54,7 @@ use \ForceUTF8\Encoding;
 
 					$content .= $parts[$counter];
 					$content .= '<a href="' . $expanded_url . '">' . $display_url . '</a>';
+					$this->lastUrl = $expanded_url;
 					$counter++;
 				}
 				$content .= $parts[$counter];
@@ -75,7 +78,7 @@ use \ForceUTF8\Encoding;
 			//$content = preg_replace("#\#(\\w+)#", "<a href=\"http://twitter.com/hashtag/$1\">#$1</a>", $content);
 			//convert everything to utf8 (see dependency above)
 			$content = Encoding::toUTF8($content);
-			return $content;
+			return [$content, $this->lastUrl];
 
 		}
 

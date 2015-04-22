@@ -13,6 +13,10 @@ class Tweet extends Model {
 		return $this->belongsTo('\LebaneseTweets\Tweep');
 	}
 
+	public function link(){
+		return $this->belongsTo('\LebaneseTweets\Link');
+	}
+
 	// This function build the query for tweets on several filter levels.
 
 	public function makeQuery($group = null, $from = 0, $to = 20, $request=null){
@@ -81,7 +85,9 @@ class Tweet extends Model {
 
 		// store it
 		$this->twitter_id = $canonicalTweet->id ;
-		$this->content = (new TweetContentParser($canonicalTweet))->parse() ;
+		$contentParser = (new TweetContentParser($canonicalTweet))->parse();
+		$this->content =  $contentParser[0];
+		$lastUrl = $contentParser[1];
 		$this->is_retweet = $retweeted ;
 		$this->is_reply = $isreply;
 		$this->username = $canonicalUser->screen_name; ;
@@ -125,13 +131,16 @@ class Tweet extends Model {
 					$this->media = 'img/cache/' . $imageName ;
 					$this->media_width = 400;
 					$this->media_height = 400;
-
-					## TO DO ##
-					## STORE IMAGE SOURCE TO MEDIA
 				}
 			}
-			#save cache
-			#store link to cached media and dimensions 400 x 400
+		}
+
+		// Link
+		
+		if ($lastUrl) {
+			$link = (new \LebaneseTweets\Link);
+			$link->build($lastUrl);
+			$this->link_id = $link->id;
 		}
 		
 		// popularity

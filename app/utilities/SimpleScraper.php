@@ -131,49 +131,34 @@ class SimpleScraper {
 
 
 /*
-*
-*
+* Extract specific detail ('title', 'description' or 'image')
+* 
 * @return string
  */
-public function getDescription(){
-	$candidates = [$this->data['ogp']['description'], $this->data['twitter']['description'], $this->data['meta']['Description']];
-	foreach ($candidates as $key => $description) {
-		if (strlen($description) > 10 ) {
-			return $description;
+
+public function getDetail($detail){ // suported $detail: "title", "description", "image"
+	$options = ['ogp', 'twitter', 'meta'];
+	foreach ($options as $key => $option) {
+		if (isset($this->data['ogp'][$detail])) {
+			return $this->data['ogp'][$detail];
 		}
 	}
 	return false;
 }
 
-/*
-*
-*
-* @return string
- */
-public function getImage(){
-	$candidates = [$this->data['ogp']['image'], $this->data['twitter']['image']];
-	foreach ($candidates as $key => $image) {
-		if (strlen($image) > 10 ) {
-			return $image;
-		}
-	}
-	return false;
-}
-
-/*
-*
-*
-* @return string
- */
 public function getTitle(){
-	$candidates = [$this->data['ogp']['title'], $this->data['twitter']['title']];
-	foreach ($candidates as $key => $title) {
-		if (strlen($title) > 4 ) {
-			return $title;
-		}
-	}
-	return false;
+	return $this->getDetail('title');
 }
+
+
+public function getDescription(){
+	return $this->getDetail('description');
+}
+
+public function getImage(){
+	return $this->getDetail('image');
+}
+
 	
 /*===========================================================================*/
 // PRIVATE METHODS
