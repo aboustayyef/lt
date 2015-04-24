@@ -14,7 +14,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 	<img class="tweep_thumb	@if($tweet->is_retweet)retweet @endif" src="{{$tweet->user_image}}" height="50px">
 	<h3>
 		@if(!$tweet->is_retweet){{$tweet->tweep_public_name}}<br>@endif
-		<small>{{'@' . $tweet->tweep_twitterHandle}}</small>
+		<small>{{'@' . $tweet->username}}</small>
 	</h3>
 	@if($group=="")
 		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
