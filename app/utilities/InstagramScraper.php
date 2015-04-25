@@ -10,7 +10,7 @@ class InstagramScraper
 		// then they delete it latest for one of many reasons
 
 		$header = get_headers($url, 1);
-		if ($header[0] = "HTTP/1.1 404 NOT FOUND") {
+		if ($header[0] == "HTTP/1.1 404 NOT FOUND") {
 			echo "Sorry, Instagram photo no longer exists \n";
 			return false;
 		} else {

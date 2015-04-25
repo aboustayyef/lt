@@ -141,8 +141,15 @@ class Tweet extends Model {
 		// Link
 		
 		if ($lastUrl) {
-			$link = (new \LebaneseTweets\Link);
-			$link->build($lastUrl);
+
+			// check if link already exists
+
+			if (\LebaneseTweets\Link::where('url',$lastUrl)->count() > 0 ) {
+				$link = \LebaneseTweets\Link::where('url',$lastUrl)->get()->first();
+			} else {
+				$link = (new \LebaneseTweets\Link);
+				$link->build($lastUrl);	
+			}
 			$this->link_id = $link->id;
 		}
 		

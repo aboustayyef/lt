@@ -37,7 +37,7 @@ class SimpleScraper {
 		$this->url = $url;
 		
 		$header = get_headers($url, 1);
-		if ($header[0] = "HTTP/1.1 404 NOT FOUND") {
+		if ($header[0] == "HTTP/1.1 404 NOT FOUND") {
 			echo "Sorry, url no longer exists \n";
 			return false;
 		}

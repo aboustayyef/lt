@@ -1,13 +1,13 @@
 <?php namespace LebaneseTweets;
 
 use Illuminate\Database\Eloquent\Model;
-use \LebaneseTweets\Utilities\SimpleScraper;
+use \LebaneseTweets\Utilities\Scraper;
 use \iMagick;
 
 class Link extends Model {
 
 	public function build($url){
-		$info = new SimpleScraper($url);
+		$info = new Scraper($url);
 		if ($info->getTitle()) {
 
 			$this->url = $url;
