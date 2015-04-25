@@ -36,6 +36,12 @@ class SimpleScraper {
 			throw new InvalidArgumentException(I18n::text("Argument 'url' is invalid."));
 		$this->url = $url;
 		
+		$header = get_headers($url, 1);
+		if ($header[0] = "HTTP/1.1 404 NOT FOUND") {
+			echo "Sorry, url no longer exists \n";
+			return false;
+		}
+
 		$this->fetchResource();
 		libxml_use_internal_errors(true);
 		$dom = new \DOMDocument(null, 'UTF-8');

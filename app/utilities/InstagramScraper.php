@@ -5,7 +5,18 @@ class InstagramScraper
 	protected $content;
 	function __construct($url)
 	{
-		$this->content = @file_get_contents($url);
+		// First, Check if photo still exists
+		// Sometimes, people tweet an instagram photo
+		// then they delete it latest for one of many reasons
+
+		$header = get_headers($url, 1);
+		if ($header[0] = "HTTP/1.1 404 NOT FOUND") {
+			echo "Sorry, Instagram photo no longer exists \n";
+			return false;
+		} else {
+			$this->content = @file_get_contents($url);
+		}
+
 	}
 
 	public function image(){
