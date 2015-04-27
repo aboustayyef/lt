@@ -41,6 +41,17 @@
 {{-- @include('layouts.partials.filters') --}}
 
 
+<div class="inner">
+
+	<ul class="cards">
+	@include('layouts.partials.top5')
+	@foreach($tweets as $tweet)
+		@include('layouts.partials.tweet')
+	@endforeach
+</ul>
+</div>
+
+@include('layouts.partials.footer')
 </div> <!--/scrollingArea-->
 </body>
 </html>
