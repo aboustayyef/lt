@@ -33,6 +33,25 @@
 <div id="curtain"></div>
 
 
+<div id="scrollingArea">
+
+{{-- @include('layouts.partials.filters') --}}
+
+
+<div class="inner">
+	@if($group)
+		@include('layouts.partials.narrowDownFurther')
+	@endif
+	<ul class="cards">
+	@include('layouts.partials.top5')
+	@foreach($tweets as $tweet)
+		@include('layouts.partials.tweet')
+	@endforeach
+</ul>
+</div>
+
+@include('layouts.partials.footer')
+</div> <!--/scrollingArea-->
 </body>
 </html>
 
