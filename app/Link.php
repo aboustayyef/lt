@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use \LebaneseTweets\Utilities\Scraper;
 use \iMagick;
+use \LebaneseTweets\Utilities\Url;
 
 class Link extends Model {
 
@@ -11,7 +12,7 @@ class Link extends Model {
 
 
 		// first, make sure url exists and we can access it
-		$valid = new Utilities/Url($url);
+		$valid = new Url($url);
 		if ($url = $valid->isValid()) {
 			# proceed
 		}else{
