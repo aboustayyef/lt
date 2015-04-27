@@ -23,7 +23,7 @@ class streamController extends Controller {
 		
 		if ($group == 'politicianstest') {
 			$tweets = (New Tweet)->makeQuery('politicians', 0, 20, $request);
-			return $tweets;
+			return $request;
 		}
 		$tweets = (New Tweet)->makeQuery($group, 0, 20, $request);
 
