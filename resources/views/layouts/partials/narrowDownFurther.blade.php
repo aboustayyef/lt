@@ -17,8 +17,9 @@ $subgroupStructure = [
 		<li>
 			<select name="{{$subgroup}}">
 			  <option value="" disabled selected>{{$subgroup}}</option>
-			  <?php var_dump($subsubgroups[$subgroup]); ?>
-
+			  @foreach($subsubgroups[$subgroup] as $subsubgroup)
+				  <option value="{{$subsubgroup}}">{{$subsubgroup}}</option>
+			  @endforeach
 			</select>
 		</li>
 	@endforeach
