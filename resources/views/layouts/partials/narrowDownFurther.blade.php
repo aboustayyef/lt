@@ -9,3 +9,22 @@ $subgroupStructure = [
 	}
 	$subsubgroups = Cache::get('subsubgroups');
 ?>
+<ul class="narrowDownFurther">
+	<form>
+	<li class="headline">Narrow Down Further: </li>
+	@foreach ($subgroupStructure[$group] as $subgroup)
+	
+		<li>
+			<select name="{{$subgroup}}">
+			  <option value="" disabled selected>{{$subgroup}}</option>
+
+			</select>
+		</li>
+	@endforeach
+	<li>
+		<div class="form-controll">
+			<input type="submit">
+		</div>
+	</li>
+	</form>
+</ul>
