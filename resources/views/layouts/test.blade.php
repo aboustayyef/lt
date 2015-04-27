@@ -33,7 +33,7 @@
 <div id="curtain"></div>
 
 <div class="fixed">
-	@include('layouts.partials.topbar')
+	@include('layouts.partials.menubar')
 </div>
 <div id="scrollingArea">
 
