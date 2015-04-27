@@ -32,7 +32,9 @@
     </script>
 <div id="curtain"></div>
 
-
+<div class="fixed">
+	@include('layouts.partials.topbar')
+</div>
 <div id="scrollingArea">
 
 {{-- @include('layouts.partials.filters') --}}
