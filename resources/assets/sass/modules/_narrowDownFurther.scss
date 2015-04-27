@@ -1,0 +1,20 @@
+ul.narrowDownFurther{
+	background: darken(white,8);
+	margin-right:10px;
+	padding-left:0;
+	li{
+		padding:5px;
+		margin:0;
+		display:inline-block;
+		list-style-type:none;
+		@media screen and (max-width:400px){
+			width:100%;
+		}
+	}
+	input[type="submit"]{
+		appearance:none;
+		border:0;
+		color:white;
+		background:lighten($mainColor,9);
+	}
+}

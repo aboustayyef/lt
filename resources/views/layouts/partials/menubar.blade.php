@@ -14,7 +14,8 @@
 			<option data-target="/politicians" @if($group=="politicians") selected="selected" @endif>Politicians</option>
 			<option data-target="/journalists" @if($group=="journalists") selected="selected" @endif>Journalists</option>
 		</select>
-		@include('layouts.partials.filterbutton')
+		{{-- @include('layouts.partials.filterbutton') --}}
+		
 
 	</div>
 </div>

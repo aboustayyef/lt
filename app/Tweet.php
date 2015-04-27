@@ -42,21 +42,6 @@ class Tweet extends Model {
 			}
 		}
 
-		// check for replies. hidden by default;	
-			if (($request->has('show_replies')) && ($request->get('show_replies') == 'yes')) {
-				#nothing (shows replies if we don't do anything)
-			}else{
-				// hides replies otherwise (ie most of the time)
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('is_reply',0);
-			}
-
-		// check for retweets. hidden by default;	
-			if (($request->has('show_retweets')) && ($request->get('show_retweets') == 'yes')) {
-				#nothing (shows retweets if we don't do anything)
-			}else{
-				// hides retweets otherwise (ie most of the time)
-				$tweetsQueryBuilder = $tweetsQueryBuilder->where('is_retweet',0);
-			}
 
 		// check for show Images
 			if (($request->has('show_images_only')) && ($request->get('show_images_only') == 'yes')) {
@@ -134,25 +119,21 @@ class Tweet extends Model {
 						$this->media_height = 400;
 					}
 				}
-					
+			// if no instagram, look for link
+			} elseif($lastUrl){
+
+				// check if link already exists
+				if (\LebaneseTweets\Link::where('url',$lastUrl)->count() > 0 ) {
+					$link = \LebaneseTweets\Link::where('url',$lastUrl)->get()->first();
+				} else {
+					$link = (new \LebaneseTweets\Link);
+					$link->build($lastUrl);	
+				}
+				$this->link_id = $link->id;
 			}
 		}
 
-		// Link
-		
-		if ($lastUrl) {
-
-			// check if link already exists
-
-			if (\LebaneseTweets\Link::where('url',$lastUrl)->count() > 0 ) {
-				$link = \LebaneseTweets\Link::where('url',$lastUrl)->get()->first();
-			} else {
-				$link = (new \LebaneseTweets\Link);
-				$link->build($lastUrl);	
-			}
-			$this->link_id = $link->id;
-		}
-		
+	
 		// popularity
 		
 		$this->favorites = $canonicalTweet->favorite_count; ;

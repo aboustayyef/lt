@@ -8,6 +8,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 
 <!-- Card Header -->
 <div class="cardheader">
+	
 	@if($tweet->is_retweet)
 		<h4>{{$tweet->tweep_public_name}} Retweeted</h4>
 	@endif
@@ -16,12 +17,7 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 		@if(!$tweet->is_retweet){{$tweet->tweep_public_name}}<br>@endif
 		<small>{{'@' . $tweet->username}}</small>
 	</h3>
-	@if($group=="")
-		<?php $tweetgroup = strtolower($tweet->tweep_group) ?>
-		<a href="/{{$tweetgroup}}">
-			<img class="groupicon" src="{{URL::asset('img/groupicons/' . $tweetgroup . '.png')}}" width="30" height="30" alt="show {{$tweetgroup}} only" title="{{$tweetgroup}}. Click to show {{$tweetgroup}} only">		
-		</a>
-	@endif
+		
 </div>
 
 

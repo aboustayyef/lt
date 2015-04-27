@@ -142,6 +142,8 @@ div.cardheader h3 small, div.cardheader h4 small { color: #999; }
 div.cardheader img.tweep_thumb { float: left; margin-right: 10px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); }
 div.cardheader img.tweep_thumb.retweet { width: 30px; height: 30px; }
 div.cardheader img.groupicon { position: absolute; top: 10px; right: 10px; }
+div.cardheader .tag { padding: 5px; margin-bottom: 10px; display: inline-block; border: 1px solid silver; color: silver; border-radius: 5px; font-size: 12px; }
+div.cardheader .tag:hover { background: #007A96; color: white; border: 1px solid #007A96; }
 
 .cardbody .metaInfo { font-size: 12px; }
 .cardbody .metaInfo .postedSince { color: #007A96; display: inline-block; }
@@ -204,6 +206,11 @@ body { background: #d1d1d1; position: absolute; width: 100%; }
 .filterButton button.active { border-bottom: 1px solid #DAFDFF; border-top: 1px solid #005163; background: #00657d; }
 .filterButton button:focus { outline: none; }
 .filterButton button svg { fill: #00a3c9; }
+
+ul.narrowDownFurther { background: #ebebeb; margin-right: 10px; padding-left: 0; }
+ul.narrowDownFurther li { padding: 5px; margin: 0; display: inline-block; list-style-type: none; }
+@media screen and (max-width: 400px) { ul.narrowDownFurther li { width: 100%; } }
+ul.narrowDownFurther input[type="submit"] { appearance: none; border: 0; color: white; background: #009fc4; }
 
 .top5 h3 { margin: 0; padding: 20px 10px 20px 10px; font-size: 28px; color: #007A96; }
 .top5 h3 small { font-size: 60%; color: #007A96; opacity: 0.5; }

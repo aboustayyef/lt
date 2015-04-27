@@ -7,8 +7,8 @@ class Categories
 
 	public function __construct(){
 		$this->structure = [
-			'Politicians'	=>	['District','Party', 'Sect'],
-			'Journalists'	=>	['Outfit', 'Medium']
+			'politicians'	=>	['district','party', 'sect'],
+			'journalists'	=>	['outfit', 'medium']
 		];
 	}
 

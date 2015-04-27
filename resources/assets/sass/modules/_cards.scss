@@ -49,6 +49,20 @@ div.cardheader{
 		top: 10px;
 		right: 10px;
 	}
+	.tag{
+		padding:5px;
+		margin-bottom:10px;
+		display:inline-block;
+		border:1px solid silver;
+		color:silver;
+		border-radius:5px;
+		font-size:12px;
+		&:hover{
+			background:$mainColor;
+			color:white;
+			border: 1px solid $mainColor;
+		}
+	}
 }
 
 

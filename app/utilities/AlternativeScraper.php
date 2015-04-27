@@ -21,15 +21,25 @@ class AlternativeScraper {
 
 		if ($html = @file_get_contents($url)) {
 			$this->html = $html;
-			$this->crawler = new Crawler($this->html);
+			$this->crawler = new Crawler;
+			$this->crawler->addHTMLContent($this->html, 'UTF-8');
+			
+			// try to follow redirects to know the root of relative images
+			$urlResolver = new UrlResolver;
+			$resolvedUrl = $urlResolver->get($url);
+
+			if ($resolvedUrl) {
+				$url = $resolvedUrl;
+			}
+
 			$url = parse_url($url);
 			$this->url_root = $url['scheme'] . '://' . $url['host'];
+
 		} else {
 			return false;
 		}
 
 	}
-
 	public function getTitle(){
 		if ($this->crawler->filter('title')->count() > 0) {
 			return $this->crawler->filter('title')->text();
@@ -79,7 +89,17 @@ class AlternativeScraper {
 
 	private function isLargeEnough($image, $minWidth){
 
-		$dimensions = getimagesize(urldecode($image));
+		echo "Checking Image $image\n";
+		// Check first if image exists
+		$header = get_headers($image, 1);
+		echo "Checking if $image Exists \n"; 
+		if (strpos($header[0], '404')) {
+			echo "Nope. It doesn't\n";
+			echo "couldn't find $image \n";
+			return false;
+		}
+
+		$dimensions = getimagesize($image);
 		if ($dimensions[0] >= $minWidth) {
 			return true;
 		}
