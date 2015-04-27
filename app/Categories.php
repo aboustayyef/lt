@@ -35,7 +35,6 @@ class Categories
 					}
 				}
 				sort($options[$subgroup]);
-				var_dump($options[$subgroup]);
 			}
 		}
 

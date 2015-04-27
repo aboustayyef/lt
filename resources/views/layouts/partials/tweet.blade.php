@@ -7,16 +7,19 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 >
 
 <!-- Card Header -->
-<div class="cardheader">
+<div class="cardheader @if($tweet->is_retweet) tint @endif">
+		@if($tweet->is_retweet)
+
+			<h3 class="retweeted"><img src="{{URL::asset('img/retweet.png')}}" width="20" height="15">&nbsp;{{$tweet->tweep_public_name}} Retweeted</h3>
+			
+		@else
+			<img class="tweep_thumb" src="{{$tweet->user_image}}" height="50px">
+			<h3>
+				{{$tweet->tweep_public_name}}<br>
+				<small>{{'@' . $tweet->tweep_twitterHandle}}</small>
+			</h3>		
+		@endif
 	
-	@if($tweet->is_retweet)
-		<h4>{{$tweet->tweep_public_name}} Retweeted</h4>
-	@endif
-	<img class="tweep_thumb	@if($tweet->is_retweet)retweet @endif" src="{{$tweet->user_image}}" height="50px">
-	<h3>
-		@if(!$tweet->is_retweet){{$tweet->tweep_public_name}}<br>@endif
-		<small>{{'@' . $tweet->username}}</small>
-	</h3>
 		
 </div>
 
@@ -24,6 +27,17 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 <!-- Card body -->
 <div class="cardbody">
 	<div class="metaInfo">
+
+	@if($tweet->is_retweet)
+		<div class="retweetedContent">
+
+			<div class="subheader">
+			<img class="tweep_thumb	retweet" src="{{$tweet->user_image}}" height="50px">
+			<h3>{{'@' . $tweet->username}}</h3>	
+			</div>
+
+	@endif
+
         <div class="postedSince">
           <a href="https://twitter.com/{{$tweet->tweep_twitterHandle}}/status/{{$tweet->twitter_id}}">{{(new \Carbon\Carbon($tweet->tweet_date))->diffForHumans()}}</a>
 		</div>
@@ -31,7 +45,6 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 			<li class="favorites">@include('svgIcons.favorite'){{$tweet->favorites}}</li>
 			<li class="retweets">@include('svgIcons.retweet'){{$tweet->retweets}}</li>
 		</ul>
-		
 
 		<?php 
 			// Detect language
@@ -48,6 +61,9 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 			<img src="{{$tweet->link->image}}" width="{{$tweet->link->image_width}}" height="{{$tweet->link->image_height}}">
 			<h4>{{$tweet->link->title}}</h4>
 			<p>{{$tweet->link->excerpt}}</p>
+		@endif
+		@if($tweet->is_retweet)
+			</div> {{-- retweeted content --}}
 		@endif
 	</div>
 </div>

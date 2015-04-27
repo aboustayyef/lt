@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<title>@yield('title')</title>
-	<link rel="stylesheet" href="{{URL::asset('css/lebanesetweets.css?v=1.01')}}">
+	<link rel="stylesheet" href="{{URL::asset('css/lebanesetweets.css?v=1.02')}}">
 </head>
 <body>
 	<script>

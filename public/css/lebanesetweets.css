@@ -135,17 +135,21 @@ ul.cards { padding: 0; margin: 0 auto; margin-top: 20px; }
 
 li.card { display: block; list-style-type: none; width: 300px; border: 1px solid grey; margin-bottom: 10px; background: white; border: 1px solid #b3b3b3; }
 
+.card img.tweep_thumb { float: left; margin-right: 10px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); }
+.card img.tweep_thumb.retweet { width: 30px; height: 30px; }
+.card img { max-width: 100%; }
+
 div.cardheader { overflow: auto; background: rgba(0, 0, 0, 0.03); border-bottom: 1px solid #b3b3b3; }
-div.cardheader h4 { margin: 0; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e7e7e7; }
+div.cardheader.tint { background: #E7F0F4; }
 div.cardheader h3, div.cardheader h4 { color: #666; margin-top: 10px; font-weight: normal; }
 div.cardheader h3 small, div.cardheader h4 small { color: #999; }
-div.cardheader img.tweep_thumb { float: left; margin-right: 10px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.1); }
-div.cardheader img.tweep_thumb.retweet { width: 30px; height: 30px; }
+div.cardheader h3.retweeted, div.cardheader h4.retweeted { margin: 0; }
 div.cardheader img.groupicon { position: absolute; top: 10px; right: 10px; }
 div.cardheader .tag { padding: 5px; margin-bottom: 10px; display: inline-block; border: 1px solid silver; color: silver; border-radius: 5px; font-size: 12px; }
 div.cardheader .tag:hover { background: #007A96; color: white; border: 1px solid #007A96; }
 
 .cardbody .metaInfo { font-size: 12px; }
+.cardbody .metaInfo h3, .cardbody .metaInfo h4 { color: #666; margin-top: 10px; font-weight: normal; }
 .cardbody .metaInfo .postedSince { color: #007A96; display: inline-block; }
 .cardbody .metaInfo .retweets_and_favorites { padding: 0; width: 100px; float: right; }
 .cardbody .metaInfo .retweets_and_favorites li { list-style-type: none; display: inline-block; }
@@ -155,6 +159,10 @@ div.cardheader .tag:hover { background: #007A96; color: white; border: 1px solid
 .cardbody .tweetContent.arabic { text-align: right; }
 .cardbody .tweetContent.arabic p { font-size: 20px; }
 .cardbody .tweetContent p { padding: 10px 10px; font-size: 16px; line-height: 25px; color: #505050; margin-bottom: 20px; overflow: hidden; }
+
+.subheader { overflow: auto; margin-bottom: 10px; border-bottom: 1px solid silver; }
+
+.retweetedContent { padding: 10px; border: 1px dotted silver; }
 
 .cardheader, .cardbody, .cardfooter { padding: 10px; }
 

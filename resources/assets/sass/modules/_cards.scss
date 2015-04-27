@@ -14,13 +14,30 @@ li.card{
 	border:1px solid $cardBorderColor;
 }
 
-div.cardheader{
-	h4{
-		margin:0;
-		margin-bottom:10px;
-		padding-bottom:10px;
-		border-bottom:1px solid rgb(231,231,231);
+.card
+{
+	img.tweep_thumb
+	{
+		float: left;
+		margin-right: 10px;
+		border-radius: 50%;
+		border:1px solid rgba(0,0,0,0.1);
+		&.retweet
+		{
+			width:30px;
+			height:30px;
+		}
 	}
+	img{
+		max-width:100%;
+	}
+}
+
+div.cardheader{
+	&.tint{
+		background:#E7F0F4;
+	}
+
 	h3, h4{
 		color: #666;
 		margin-top: 10px;
@@ -28,22 +45,14 @@ div.cardheader{
 		small{
 			color:#999;
 		}
+		&.retweeted{
+			margin:0;
+		}
 	}
 
 	overflow:auto;
 	background:$cardHeaderColor;
 	border-bottom:1px solid $cardBorderColor;
-	img.tweep_thumb{
-		float: left;
-		margin-right: 10px;
-		border-radius: 50%;
-		border:1px solid rgba(0,0,0,0.1);
-
-		&.retweet{
-			width:30px;
-			height:30px;
-		}
-	}
 	img.groupicon{
 		position: absolute;
 		top: 10px;
@@ -67,6 +76,11 @@ div.cardheader{
 
 
 .cardbody .metaInfo{
+	h3,h4{
+		color: #666;
+		margin-top: 10px;
+		font-weight: normal;
+	}
 	font-size:12px;
 	.postedSince{
 		color: $mainColor;
@@ -105,6 +119,16 @@ div.cardheader{
 	}
 }
 
+.subheader{
+	overflow: auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+
+.retweetedContent{
+	padding:10px;
+	border:1px dotted silver;
+}
 
 .cardheader, .cardbody, .cardfooter{
 	padding:10px;
