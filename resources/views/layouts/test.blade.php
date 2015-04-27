@@ -42,7 +42,9 @@
 
 
 <div class="inner">
-
+	@if($group)
+		@include('layouts.partials.narrowDownFurther')
+	@endif
 	<ul class="cards">
 	@include('layouts.partials.top5')
 	@foreach($tweets as $tweet)
