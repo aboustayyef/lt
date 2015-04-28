@@ -25,8 +25,8 @@ class AlternativeScraper {
 			$this->crawler->addHTMLContent($this->html, 'UTF-8');
 			
 			// try to follow redirects to know the root of relative images
-			$urlResolver = new UrlResolver;
-			$resolvedUrl = $urlResolver->get($url);
+			$urlResolver = new UrlResolver($url);
+			$resolvedUrl = $urlResolver->iterate();
 
 			if ($resolvedUrl) {
 				$url = $resolvedUrl;

@@ -26,7 +26,7 @@ class Tweet extends Model {
 			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
 		];
 
-			$tweetsQueryBuilder = $this->orderBy('tweet_date','desc');
+			$tweetsQueryBuilder = $this->orderBy('tweet_date','desc')->where('is_reply',0);
 
 		if ($group) {
 			

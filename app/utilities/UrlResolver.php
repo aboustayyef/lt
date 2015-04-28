@@ -6,6 +6,40 @@
 
 class UrlResolver
 {
+
+	protected $initialUrl;
+	protected $url;
+	protected $iterations;
+
+	function __construct($initialUrl){
+		$this->initialUrl = $initialUrl;
+		$this->iterations = 1;
+	}
+
+	function iterate(){
+
+		// start with initial url;
+		$this->url = $this->get($this->initialUrl);
+
+		echo "Round: $this->iterations, initial: $this->initialUrl, url: $this->url\n";
+
+		// if false
+		if (!$this->url) {
+			return $this->initialUrl;
+		}
+
+		// if same, return
+		if ($this->url == $this->initialUrl) {
+			echo "The Same, $this->url\n";
+			return $this->url;
+		}
+
+		// if not the same, do recursive magic;
+		$this->initialUrl = $this->url;
+		$this->iterations++;
+		return $this->iterate();
+
+	}
 	
 	function get($url){
 	    $redirect_url = null; 

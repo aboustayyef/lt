@@ -49,9 +49,17 @@ class Url
 
 	private function resolve(){
 		echo "checking if $this->url resolves\n";
-		$resolvedUrl = (new UrlResolver)->get($this->url);
+		$resolvedUrl = (new UrlResolver($this->url))->iterate();
 		if ($resolvedUrl) {
 			$this->url = $resolvedUrl;
+
+			// ignore facebook links
+			$parsed = parse_url($this->url);
+			if ($parsed['host'] == 'www.facebook.com') {
+				echo "Facebook Links not supported \n";
+				return false;
+			}
+			
 			return true;
 		}
 		echo "url does not resolve\n";

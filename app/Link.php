@@ -13,7 +13,7 @@ class Link extends Model {
 
 		// first, make sure url exists and we can access it
 		$valid = new Url($url);
-		if ($url = $valid->isValid()) {
+		if ($valid->isValid()) {
 			# proceed
 		}else{
 			return false;
