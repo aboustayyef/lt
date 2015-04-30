@@ -141,9 +141,10 @@ li.card { display: block; list-style-type: none; width: 300px; border: 1px solid
 
 div.cardheader { overflow: auto; background: rgba(0, 0, 0, 0.03); border-bottom: 1px solid #b3b3b3; }
 div.cardheader.tint { background: #E7F0F4; }
+div.cardheader a:hover { text-decoration: none; }
 div.cardheader h3, div.cardheader h4 { color: #666; margin-top: 10px; font-weight: normal; }
 div.cardheader h3 small, div.cardheader h4 small { color: #999; }
-div.cardheader h3.retweeted, div.cardheader h4.retweeted { margin: 0; }
+div.cardheader h3.retweeted, div.cardheader h4.retweeted { font-size: 12px; font-weight: bold; margin: 0; }
 div.cardheader img.groupicon { position: absolute; top: 10px; right: 10px; }
 div.cardheader .tag { padding: 5px; margin-bottom: 10px; display: inline-block; border: 1px solid silver; color: silver; border-radius: 5px; font-size: 12px; }
 div.cardheader .tag:hover { background: #007A96; color: white; border: 1px solid #007A96; }
@@ -163,6 +164,12 @@ div.cardheader .tag:hover { background: #007A96; color: white; border: 1px solid
 .subheader { overflow: auto; margin-bottom: 10px; border-bottom: 1px solid silver; }
 
 .retweetedContent { padding: 10px; border: 1px dotted silver; }
+
+.link { border-top: 1px solid silver; }
+.link.arabic { text-align: right; }
+.link a h4.linkTitle { color: #007A96; }
+.link h4 { font-size: 16px; }
+.link p { color: gray; }
 
 .cardheader, .cardbody, .cardfooter { padding: 10px; }
 

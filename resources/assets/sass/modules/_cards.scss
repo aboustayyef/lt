@@ -37,7 +37,11 @@ div.cardheader{
 	&.tint{
 		background:#E7F0F4;
 	}
-
+	a{
+		&:hover{
+			text-decoration:none;
+		}
+	}
 	h3, h4{
 		color: #666;
 		margin-top: 10px;
@@ -46,6 +50,8 @@ div.cardheader{
 			color:#999;
 		}
 		&.retweeted{
+			font-size:12px;
+			font-weight:bold;
 			margin:0;
 		}
 	}
@@ -128,8 +134,25 @@ div.cardheader{
 .retweetedContent{
 	padding:10px;
 	border:1px dotted silver;
-}
 
+}
+.link{
+	border-top:1px solid silver;
+	&.arabic{
+		text-align:right;
+	}
+	a{
+		h4.linkTitle{
+		color:$mainColor;
+		}
+	}
+	h4{
+		font-size:16px;
+	}
+	p{
+		color:darken(#999, 10);
+	}
+}
 .cardheader, .cardbody, .cardfooter{
 	padding:10px;
 }
