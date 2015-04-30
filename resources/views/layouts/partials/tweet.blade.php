@@ -64,8 +64,9 @@ foreach ($subgroups as $key => $subgroup) {	echo 'data-subgroup' . ($key + 1) . 
 			$isArabic = \LebaneseTweets\Utilities\String::isMostlyArabic($tweet->link->title);
 		?>
 			<div class="link @if($isArabic) arabic @endif">
-				<img src="{{$tweet->link->image}}" width="{{$tweet->link->image_width}}" height="{{$tweet->link->image_height}}">
-				
+				<a href="{{$tweet->link->url}}">
+					<img src="{{$tweet->link->image}}" width="{{$tweet->link->image_width}}" height="{{$tweet->link->image_height}}">
+				</a>
 				<a href="{{$tweet->link->url}}">
 					<h4 class="linkTitle">{{$tweet->link->title}}</h4>
 				</a>
