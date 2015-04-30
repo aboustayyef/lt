@@ -101,7 +101,7 @@ class getLatestTweets extends Command {
 				$this->comment('Waiting 5 seconds');
 				sleep(5);
 			} catch (Exception $e) {
-				$this->error('error retreiving a tweet by ' . $tweep->twitterhandle);
+				\Log::error($e->getMessage());
 			}
 		}
 	

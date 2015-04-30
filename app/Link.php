@@ -38,7 +38,7 @@ class Link extends Model {
 					echo "Nope. It doesn't\n";
 				}else{
 					$image = $info->getImage();
-					$dimensions = getimagesize($image);
+					$dimensions = @getimagesize($image);
 					$height = $dimensions[1];
 					$width = $dimensions[0];
 					#Cache

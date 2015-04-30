@@ -99,7 +99,7 @@ class AlternativeScraper {
 			return false;
 		}
 
-		$dimensions = getimagesize($image);
+		$dimensions = @getimagesize($image);
 		if ($dimensions[0] >= $minWidth) {
 			return true;
 		}
