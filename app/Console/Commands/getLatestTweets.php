@@ -5,6 +5,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use LebaneseTweets\Tweep;
 use LebaneseTweets\Tweet;
+use \Exception;
 
 /**
  *	Usage: LebaneseTweets:getLatest mps|journalists|bloggers 
@@ -100,8 +101,10 @@ class getLatestTweets extends Command {
 				$this->info('Api Calls Remaining: '.$twitterClient->status());
 				$this->comment('Waiting 5 seconds');
 				sleep(5);
-			} catch (Exception $e) {
-				\Log::error($e->getMessage());
+
+			} catch (\Exception $e) {
+				$this->error('error retreiving a tweet by ' . $tweep->twitterhandle);
+				$this->error('error message: '. $e->message());
 			}
 		}
 	

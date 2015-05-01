@@ -4,7 +4,7 @@
 // Source: https://github.com/ramonztro/simple-scraper/blob/master/SimpleScraper.class.php
 
 use Symfony\Component\DomCrawler\Crawler ;
-
+use \Exception;
 class AlternativeScraper {
 
 	private $html;

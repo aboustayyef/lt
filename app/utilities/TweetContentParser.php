@@ -3,7 +3,7 @@
 // library to fix mixed up strings to utf-8
 // Discovered at: http://stackoverflow.com/questions/910793/detect-encoding-and-make-everything-utf-8
 use \ForceUTF8\Encoding;
-
+use \Exception;
 
 	/**
 	* Takes a tweet object and returns a pretty HTML content body

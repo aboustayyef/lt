@@ -1,5 +1,5 @@
 <?php namespace LebaneseTweets\Utilities;
-
+use \Exception;
 /**
 * 
 */

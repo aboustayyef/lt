@@ -1,5 +1,5 @@
 <?php namespace LebaneseTweets\Utilities;
-
+use \Exception;
 /**
 * Coordinates the scraping betweet Simple Scraper and Alternative Scraper
 * For Title and Description, the alternative Scraper has priority because of UTF-8

@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use \LebaneseTweets\Utilities\Scraper;
 use \iMagick;
 use \LebaneseTweets\Utilities\Url;
+use \Exception;
 
 class Link extends Model {
 

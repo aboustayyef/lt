@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use \LebaneseTweets\Utilities\TweetContentParser;
 use \Carbon\Carbon;
+use \Exception;
 
 class Tweet extends Model {
 
@@ -125,11 +126,19 @@ class Tweet extends Model {
 				// check if link already exists
 				if (\LebaneseTweets\Link::where('url',$lastUrl)->count() > 0 ) {
 					$link = \LebaneseTweets\Link::where('url',$lastUrl)->get()->first();
+					$this->link_id = $link->id;
 				} else {
 					$link = (new \LebaneseTweets\Link);
-					$link->build($lastUrl);	
+					try {
+						$link->build($lastUrl);
+						$this->link_id = $link->id;
+					} catch (\Exception $e) {
+						#nothing
+						$this->link_id = null;
+					}
+					
 				}
-				$this->link_id = $link->id;
+				
 			}
 		}
 
