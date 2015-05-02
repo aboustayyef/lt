@@ -238,6 +238,6 @@ ul.narrowDownFurther input[type="submit"] { appearance: none; border: 0; color: 
 .top5 .details img { margin-top: 5px; display: block; }
 .top5 .details ul { margin-top: 10px; }
 .top5 .details li { display: inline-block; }
-.top5 .details li:first-child { margin-right: 5px; }
+.top5 .details li:first-child { margin-right: 10px; }
 .top5 .thumb { display: block; width: 80px; height: 80px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; float: left; margin-right: 15px; }
 .top5 img { position: absolute; margin: 0; padding: 0; max-width: none; }
