@@ -1,5 +1,6 @@
 <?php 
 	$topTweets = (new \LebaneseTweets\Tweet)->top($group);
+	$thumbwidth = 80;
 ?>
 <li class="card top5">
 	<h3>Top Tweets @if($group)<small><br>( {{ 'In ' . $group }} )</small>@endif</h3>
@@ -15,30 +16,32 @@
 				<div class="thumb">
 					@if($topTweet->image())
 						@if($topTweet->image_height() > $topTweet->image_width())
-							<img src ="{{$topTweet->image()}}" width="100" height="{{(($topTweet->image_width() * 100) / $topTweet->image_height())}}">
+							<img src ="{{$topTweet->image()}}" width="{{$thumbwidth}}" height="auto">
 						@else
-							<img src ="{{$topTweet->image()}}" height="100" width="auto">
+							<img src ="{{$topTweet->image()}}" height="{{$thumbwidth}}" width="auto">
 						@endif
 					@else
-						<img src="http://placehold.it/100x100">
+						<img src="{{\URL::to('/').'/img/no-image.png'}}" width="{{$thumbwidth}}" height="auto">
 					@endif
 				</div>
 				<div class="details  @if($isArabic) arabic @endif">
+					<img class="profile" src="{{$topTweet->user_image}}" height="15" width="15" alt="">
+					<h5> {{$topTweet->tweep_public_name}}</h5>
 					<?php echo strip_tags($topTweet->content) ?>
-					<h5>{{$topTweet->tweep_public_name}}</h5>
+					<ul class="retweets_and_favorites">
+						<li class="retweets">@include('svgIcons.retweet'){{$topTweet->retweets}}</li>
+						<li class="favorites">@include('svgIcons.favorite'){{$topTweet->favorites}}</li>
+					</ul>
 				</div>
 			</div>
 		</a>
 
 			<div>
 				{{-- 
-					<img class="profile" src="{{$topTweet->user_image}}" height="24" width="24" alt="">
+					<img class="profile" src="{{$topTweet->user_image}}" height="12" width="12" alt="">
 					<h4>{{$topTweet->tweep_public_name}}</h4>
 					
-					<ul class="retweets_and_favorites">
-						<li class="favorites">@include('svgIcons.favorite'){{$topTweet->favorites}}</li>
-						<li class="retweets">@include('svgIcons.retweet'){{$topTweet->retweets}}</li>
-					</ul>
+					
 				--}}
 				
 			</div>

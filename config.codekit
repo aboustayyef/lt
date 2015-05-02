@@ -739,6 +739,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/img\/no-image.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19545,
+		"inputAbbreviatedPath": "\/public\/img\/no-image.png",
+		"outputAbbreviatedPath": "\/public\/img\/no-image.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/img\/retweet.png": {
 		"fileType": 32768,
 		"ignore": 0,
