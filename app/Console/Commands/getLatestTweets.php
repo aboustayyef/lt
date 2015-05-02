@@ -92,7 +92,7 @@ class getLatestTweets extends Command {
 						$this->comment('Tweet Already stored. Updating Retweets and Faves');
 						$currentTweet->favorites = $canonicalTweet->favorite_count;
 						$currentTweet->retweets	= $canonicalTweet->retweet_count;
-						$this->popularity_score = $currentTweet->favorites + ($currentTweet->retweets * 2);
+						$currentTweet->popularity_score = $canonicalTweet->favorite_count + ($canonicalTweet->retweet_count * 2);
 
 						$currentTweet->save();
 						$this->comment('updated! Retweets: ' . $canonicalTweet->retweet_count . ', Faves: ' . $canonicalTweet->favorite_count);
