@@ -2,6 +2,9 @@
 /node_modules
 .env
 .DS_Store
-resources/assets/sass/.sass-cache/*
-
+resources/assets/sass/.sass-cache/*/*
 public/img/cache/*.jpg
+
+resources/assets/sass/.sass-cache/b53f7502a058829e5fef006c0285fa92262682ba/_cards.scssc
+
+resources/assets/sass/.sass-cache/b53f7502a058829e5fef006c0285fa92262682ba/_top5.scssc

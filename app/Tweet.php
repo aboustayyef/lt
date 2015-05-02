@@ -18,6 +18,39 @@ class Tweet extends Model {
 		return $this->belongsTo('\LebaneseTweets\Link');
 	}
 
+	public function image(){
+		if ($this->media) {
+			return $this->media;
+		}elseif ($this->link){
+			if ($this->link->image) {
+				return \URL::to('/') . $this->link->image;
+			}
+		}
+		return false;
+	}
+
+	public function image_height(){
+		if ($this->media) {
+			return $this->media_height;
+		}elseif ($this->link){
+			if ($this->link->image) {
+				return $this->link->image_height;
+			}
+		}
+		return false;
+	}
+
+	public function image_width(){
+		if ($this->media) {
+			return $this->media_width;
+		}elseif ($this->link){
+			if ($this->link->image) {
+				return $this->link->image_width;
+			}
+		}
+		return false;
+	}
+
 	// This function build the query for tweets on several filter levels.
 
 	public function makeQuery($group = null, $from = 0, $to = 20, $request=null){

@@ -1,75 +1,63 @@
 .top5{
-
-	h3{
-		margin:0;
-		padding:20px 10px 20px 10px;
-		font-size:28px;
-		color:$mainColor;
-		small{
-			font-size:60%;
-			color:$mainColor;
-			opacity:0.5;
-		}
-	}
-
-	.arabic{
-		text-align:right;
-	}
-
-	h4{
-		margin:0;
-		margin-left:30px;
+	a{
+		color:#555;
 	}
 	ul{
-		margin:0;
 		padding:0;
-		&.retweets_and_favorites{
-			font-size:14px;
-			li{
-				display:inline-block;
-				svg{
-					margin-right:5px;
-				}
-				border-bottom:none;
-				margin-top:0;
+		list-style-type:none;
+	}
 
-			}
+	.item{
+		clear: both;
+	  	padding: 10px;
+	  	padding-left: 0;
+	  	margin-left: 10px;
+	  	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	  	overflow: auto;
+	  	&:hover{
+	  		background:darken(white,5);
+	  	}
+	}
+
+	h3{
+		font-size: 26px;
+	  	padding: 10px 10px 20px 10px;
+	  	color: #555;
+	  	margin-bottom:0;
+	  	margin-top:10px;
+	  	small{
+	  		font-size:0.6em;
+	  		color:#999;
+	  	}
+	}
+	.details{
+		font-size:14px;
+		width:150px;
+		float:left;
+		padding-right:10px;
+		overflow:hidden;
+		h5{
+			margin-top: 5px;
+			color: #007A96;
+			opacity: 0.4;
+			text-transform: uppercase;
+  			font-size: 12px;
 		}
 	}
-	li{	
-		a{
-			&:hover{
-				text-decoration:none;
-				.tweet{
-					background:darken(white,4);
-					border:1px solid silver;
-				}
-			}
-			.tweet{
-			margin-left:10px;
-			color:#444;
-			margin-top:10px;
-			padding:10px;
-			border:1px solid darken(white,10);
-			overflow:auto;
-			div.preview{
-				float:left;
-				margin-right:10px;
-				max-width:100px;
-				max-height:100px;
-				overflow-x:hidden;
-				}
-			}
-		}
-		
-		margin-top:10px;
-		list-style-type:none;
-		padding:9px;
-		div{
-			overflow:auto;
-		}
-		img.profile{
-			float:left;
-		}
+	.thumb{
+		display:block;
+		width:100px;
+		height:100px;
+		border:1px solid rgba(0, 0, 0, 0.1);
+		overflow:hidden;
+		position:relative;
+		float:left;
+		margin-right:10px;
+	}
+	img{
+		position: absolute;
+		margin:0;
+		padding:0;
+		max-width:none;
 	}
 }

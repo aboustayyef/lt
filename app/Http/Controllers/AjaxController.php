@@ -18,7 +18,6 @@ class AjaxController extends Controller {
 		$tweets = (New Tweet)->makeQuery($group, $from, $to, $request);
 
 		foreach ($tweets as $key => $tweet) {
-			echo '<h1>'.$group.'</h1>';
 			$result .= view('layouts.partials.tweet')->with('tweet', $tweet)->with(compact('group'));
 		}
 

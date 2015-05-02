@@ -18,6 +18,8 @@ Route::get('/test', function(){
 });
 
 
+Route::get('/api/v1/{apikey}', 'ApiController@index');
+
 Route::get('/ajax/{group?}/{from?}/{to?}/{parameters?}', 'AjaxController@index');
 
 Route::get('/{group?}', 'streamController@index');

@@ -227,18 +227,13 @@ ul.narrowDownFurther li { padding: 5px; margin: 0; display: inline-block; list-s
 @media screen and (max-width: 400px) { ul.narrowDownFurther li { width: 100%; } }
 ul.narrowDownFurther input[type="submit"] { appearance: none; border: 0; color: white; background: #009fc4; }
 
-.top5 h3 { margin: 0; padding: 20px 10px 20px 10px; font-size: 28px; color: #007A96; }
-.top5 h3 small { font-size: 60%; color: #007A96; opacity: 0.5; }
-.top5 .arabic { text-align: right; }
-.top5 h4 { margin: 0; margin-left: 30px; }
-.top5 ul { margin: 0; padding: 0; }
-.top5 ul.retweets_and_favorites { font-size: 14px; }
-.top5 ul.retweets_and_favorites li { display: inline-block; border-bottom: none; margin-top: 0; }
-.top5 ul.retweets_and_favorites li svg { margin-right: 5px; }
-.top5 li { margin-top: 10px; list-style-type: none; padding: 9px; }
-.top5 li a:hover { text-decoration: none; }
-.top5 li a:hover .tweet { background: whitesmoke; border: 1px solid silver; }
-.top5 li a .tweet { margin-left: 10px; color: #444; margin-top: 10px; padding: 10px; border: 1px solid #e6e6e6; overflow: auto; }
-.top5 li a .tweet div.preview { float: left; margin-right: 10px; max-width: 100px; max-height: 100px; overflow-x: hidden; }
-.top5 li div { overflow: auto; }
-.top5 li img.profile { float: left; }
+.top5 a { color: #555; }
+.top5 ul { padding: 0; list-style-type: none; }
+.top5 .item { clear: both; padding: 10px; padding-left: 0; margin-left: 10px; border-top: 1px solid rgba(0, 0, 0, 0.1); overflow: auto; }
+.top5 .item:hover { background: #f2f2f2; }
+.top5 h3 { font-size: 26px; padding: 10px 10px 20px 10px; color: #555; margin-bottom: 0; margin-top: 10px; }
+.top5 h3 small { font-size: 0.6em; color: #999; }
+.top5 .details { font-size: 14px; width: 150px; float: left; padding-right: 10px; overflow: hidden; }
+.top5 .details h5 { margin-top: 5px; color: #007A96; opacity: 0.4; text-transform: uppercase; font-size: 12px; }
+.top5 .thumb { display: block; width: 100px; height: 100px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; float: left; margin-right: 10px; }
+.top5 img { position: absolute; margin: 0; padding: 0; max-width: none; }
