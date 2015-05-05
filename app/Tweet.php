@@ -201,7 +201,7 @@ class Tweet extends Model {
 
 	public function top($group=null, $hours=12, $howmany=5){
 		
-		$tweetsQueryBuilder = $this;
+		$tweetsQueryBuilder = $this::with('Link');
 		
 		// narrow by group
 		if ($group) {
