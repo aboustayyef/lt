@@ -20,7 +20,7 @@ class ApiController extends Controller {
 	public function index($apikey)
 	{
 		if ($apikey == 'top5') {
-			return (new \LebaneseTweets\Tweet)->top();
+			return (new \LebaneseTweets\Tweet)->top(null,8,5);
 		}
 		abort('404');
 	}
