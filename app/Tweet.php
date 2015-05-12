@@ -56,8 +56,9 @@ class Tweet extends Model {
 	public function makeQuery($group = null, $from = 0, $to = 20, $request=null){
 		
 		$subgroupStructure = [
-			'politicians' => ['district', 'party', 'sect'],
-			'journalists' => ['outfit', 'medium'] // 'station/newspaper' , 'print/tv/radio/online'
+			'politicians' 	=> ['district', 'party', 'sect'],
+			'journalists' 	=> ['outfit', 'medium'], // 'station/newspaper' , 'print/tv/radio/online',
+			'activists'		=> ['topic']
 		];
 
 			$tweetsQueryBuilder = $this->orderBy('tweet_date','desc')->where('is_reply',0);

@@ -30,7 +30,7 @@
 	</div>
 	<div class="form-group">
 		{!! Form::label('group','Group')!!}
-		{!! Form::text('group',null,['class'=>'form-control','placeholder' => 'Journalists or Politicians'])!!}
+		{!! Form::text('group',null,['class'=>'form-control','placeholder' => 'Journalists, Politicians or Activists'])!!}
 	</div>
 	<div class="form-group">
 		{!! Form::label('subgroups','Sub Groups')!!}

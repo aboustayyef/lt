@@ -10,7 +10,7 @@ use LebaneseTweets\Tweep;
 
 class streamController extends Controller {
 
-	private $allowedGroups = ['politicians','journalists'];
+	private $allowedGroups = ['politicians','journalists', 'activists'];
 
 	public function index(Request $request, $group = null){
 

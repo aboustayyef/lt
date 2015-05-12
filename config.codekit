@@ -1419,6 +1419,63 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/aboustayyef\/previewer\/Readme.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/Readme.md",
+		"outputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/Readme.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/aboustayyef\/previewer\/src\/DescriptionScraper.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/src\/DescriptionScraper.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/aboustayyef\/previewer\/src\/ImageScraper.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/src\/ImageScraper.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/aboustayyef\/previewer\/src\/Previewer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/src\/Previewer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/aboustayyef\/previewer\/src\/TitleScraper.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/src\/TitleScraper.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/aboustayyef\/previewer\/src\/Utilities\/FastImage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/aboustayyef\/previewer\/src\/Utilities\/FastImage.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/autoload.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -8694,6 +8751,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/az.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/az.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/bg.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -8771,6 +8837,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/es.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/fa.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/src\/Carbon\/Lang\/fa.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -10325,6 +10400,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/lib\/PhpParser\/Node\/Expr\/Yield_.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/nikic\/php-parser\/lib\/PhpParser\/Node\/Expr\/YieldFrom.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/lib\/PhpParser\/Node\/Expr\/YieldFrom.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -14628,6 +14712,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Comparator\/ClosureComparatorSpec.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Comparator\/ClosureComparatorSpec.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Comparator\/FactorySpec.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Comparator\/FactorySpec.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Doubler\/ClassPatch\/DisableConstructorPatchSpec.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -15173,6 +15275,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/src\/Prophecy\/Call\/CallCenter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/phpspec\/prophecy\/src\/Prophecy\/Comparator\/ClosureComparator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/src\/Prophecy\/Comparator\/ClosureComparator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/phpspec\/prophecy\/src\/Prophecy\/Comparator\/Factory.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/src\/Prophecy\/Comparator\/Factory.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -25167,1218 +25287,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/swiftmailer\/swiftmailer\/tests\/unit\/Swift\/Transport\/StreamBufferTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Application.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Application.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/HelpCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/HelpCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/ListCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/ListCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/ConsoleEvents.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/ConsoleEvents.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/ApplicationDescription.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/ApplicationDescription.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/Descriptor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/Descriptor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/DescriptorInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/DescriptorInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/JsonDescriptor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/JsonDescriptor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/MarkdownDescriptor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/MarkdownDescriptor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/TextDescriptor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/TextDescriptor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/XmlDescriptor.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Descriptor\/XmlDescriptor.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleCommandEvent.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleCommandEvent.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleEvent.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleEvent.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleExceptionEvent.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleExceptionEvent.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleTerminateEvent.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Event\/ConsoleTerminateEvent.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatter.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatter.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyle.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyle.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyleInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyleInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyleStack.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Formatter\/OutputFormatterStyleStack.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DebugFormatterHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DebugFormatterHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DescriptorHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DescriptorHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DialogHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/DialogHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/FormatterHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/FormatterHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/Helper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/Helper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/HelperInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/HelperInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/HelperSet.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/HelperSet.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/InputAwareHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/InputAwareHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProcessHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProcessHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProgressBar.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProgressBar.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProgressHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/ProgressHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/QuestionHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/QuestionHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/Table.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/Table.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableSeparator.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableSeparator.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableStyle.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Helper\/TableStyle.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/ArgvInput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/ArgvInput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/ArrayInput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/ArrayInput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/Input.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/Input.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputArgument.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputArgument.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputAwareInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputAwareInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputDefinition.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputDefinition.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputOption.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/InputOption.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/StringInput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Input\/StringInput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Logger\/ConsoleLogger.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Logger\/ConsoleLogger.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/BufferedOutput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/BufferedOutput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/ConsoleOutput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/ConsoleOutput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/ConsoleOutputInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/ConsoleOutputInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/NullOutput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/NullOutput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/Output.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/Output.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/OutputInterface.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/OutputInterface.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/StreamOutput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Output\/StreamOutput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/ChoiceQuestion.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/ChoiceQuestion.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/ConfirmationQuestion.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/ConfirmationQuestion.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/Question.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Question\/Question.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Shell.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Shell.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tester\/ApplicationTester.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tester\/ApplicationTester.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tester\/CommandTester.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tester\/CommandTester.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/ApplicationTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/ApplicationTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/CommandTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/CommandTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/HelpCommandTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/HelpCommandTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/ListCommandTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Command\/ListCommandTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/AbstractDescriptorTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/AbstractDescriptorTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/JsonDescriptorTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/JsonDescriptorTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/MarkdownDescriptorTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/MarkdownDescriptorTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/ObjectsProvider.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/ObjectsProvider.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/TextDescriptorTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/TextDescriptorTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/XmlDescriptorTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Descriptor\/XmlDescriptorTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/BarBucCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/BarBucCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorApplication1.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorApplication1.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorApplication2.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorApplication2.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorCommand1.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorCommand1.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorCommand2.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorCommand2.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DummyOutput.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DummyOutput.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo1Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo1Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo2Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo2Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo3Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo3Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo4Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo4Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo5Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/Foo5Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FoobarCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FoobarCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooSubnamespaced1Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooSubnamespaced1Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooSubnamespaced2Command.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/FooSubnamespaced2Command.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.md",
-		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/TestCommand.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/TestCommand.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterStyleStackTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterStyleStackTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterStyleTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterStyleTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Formatter\/OutputFormatterTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/FormatterHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/FormatterHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/HelperSetTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/HelperSetTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyDialogHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyDialogHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyProgressHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyProgressHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyTableHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/LegacyTableHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/ProcessHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/ProcessHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/ProgressBarTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/ProgressBarTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/QuestionHelperTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/QuestionHelperTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/TableTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Helper\/TableTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/ArgvInputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/ArgvInputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/ArrayInputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/ArrayInputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputArgumentTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputArgumentTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputDefinitionTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputDefinitionTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputOptionTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputOptionTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/InputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/StringInputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Input\/StringInputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Logger\/ConsoleLoggerTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Logger\/ConsoleLoggerTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/ConsoleOutputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/ConsoleOutputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/NullOutputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/NullOutputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/OutputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/OutputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/StreamOutputTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Output\/StreamOutputTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Tester\/ApplicationTesterTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Tester\/ApplicationTesterTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Tester\/CommandTesterTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Tester\/CommandTesterTest.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

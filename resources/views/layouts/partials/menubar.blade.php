@@ -13,6 +13,7 @@
 			@endif
 			<option data-target="/politicians" @if($group=="politicians") selected="selected" @endif>Politicians</option>
 			<option data-target="/journalists" @if($group=="journalists") selected="selected" @endif>Journalists</option>
+			<option data-target="/activists" @if($group=="activists") selected="selected" @endif>Activists and Bloggers</option>
 		</select>
 		{{-- @include('layouts.partials.filterbutton') --}}
 		

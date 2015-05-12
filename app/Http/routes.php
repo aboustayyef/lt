@@ -11,20 +11,11 @@
 |
 */
 
-Route::get('/test', function(){
-
-	$tops= (new \LebaneseTweets\Tweet)->top('politicians');
-	return $tops;
-});
-
-
 Route::get('/api/v1/{apikey}', 'ApiController@index');
 
 Route::get('/ajax/{group?}/{from?}/{to?}/{parameters?}', 'AjaxController@index');
 
 Route::get('/{group?}', 'streamController@index');
-
-Route::get('/mps', 'MpsController@index');
 
 Route::resource('tweeps','TweepsController');
 

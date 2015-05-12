@@ -4,8 +4,10 @@
 		Latest Tweets By Lebanese Journalists
 	@elseif($group=="politicians")
 		Latest Tweets By Lebanese Politicans
+	@elseif($group=="activists")
+		Latest Tweets By Lebanese Activists and Journalists
 	@else
-		Latest Lebanese Tweets by Journalists and Politicans
+		Latest Lebanese Tweets by Journalists, Politicans and Activists
 	@endif
 
 @stop

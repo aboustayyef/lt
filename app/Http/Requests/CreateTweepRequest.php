@@ -24,7 +24,7 @@ class CreateTweepRequest extends Request {
 		return [
 			'public_name'	=>	'required',
 			'twitterHandle'	=>	'required',
-			'group'	=>	'required',
+			'group'	=>	['required', 'in:Activists,Journalists,Politicians'],
 			'subgroups'	=>	'required',
 		];
 	}
