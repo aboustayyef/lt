@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aboustayyef/previewer.git",
-                "reference": "29b826d8dbe4858dc4860d607c20396cd2e45ffb"
+                "reference": "c0f340a0da3fa7363d452900641c2a3a73216a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aboustayyef/previewer/zipball/29b826d8dbe4858dc4860d607c20396cd2e45ffb",
-                "reference": "29b826d8dbe4858dc4860d607c20396cd2e45ffb",
+                "url": "https://api.github.com/repos/aboustayyef/previewer/zipball/c0f340a0da3fa7363d452900641c2a3a73216a0a",
+                "reference": "c0f340a0da3fa7363d452900641c2a3a73216a0a",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
             "keywords": [
                 "scraping"
             ],
-            "time": "2015-05-10 22:01:38"
+            "time": "2015-05-14 18:11:00"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -537,16 +537,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "5.0.30",
+            "version": "v5.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c7ffbf1fd4895ac4cdac551265d635d995346d97"
+                "reference": "db0a7400465df159ba8c6eaa954f97f50bc19687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c7ffbf1fd4895ac4cdac551265d635d995346d97",
-                "reference": "c7ffbf1fd4895ac4cdac551265d635d995346d97",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/db0a7400465df159ba8c6eaa954f97f50bc19687",
+                "reference": "db0a7400465df159ba8c6eaa954f97f50bc19687",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-08 19:11:13"
+            "time": "2015-05-11 22:15:00"
         },
         {
             "name": "league/flysystem",
@@ -1212,12 +1212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/CssSelector.git",
-                "reference": "af212eef645f31239e5c99929fd4844e4446d5c6"
+                "reference": "8a3bf66c294e1237d2c4550a739bc7b3dcfa773e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/af212eef645f31239e5c99929fd4844e4446d5c6",
-                "reference": "af212eef645f31239e5c99929fd4844e4446d5c6",
+                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/8a3bf66c294e1237d2c4550a739bc7b3dcfa773e",
+                "reference": "8a3bf66c294e1237d2c4550a739bc7b3dcfa773e",
                 "shasum": ""
             },
             "require": {
@@ -1243,21 +1243,21 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Jean-François Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony CssSelector Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:12:41"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:48:43"
         },
         {
             "name": "symfony/debug",
@@ -1326,12 +1326,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "b63eb94e4e9e426827b4280bed1a8c71241d8357"
+                "reference": "30113033b5c6c60db554319943af0f16f7dc3e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/b63eb94e4e9e426827b4280bed1a8c71241d8357",
-                "reference": "b63eb94e4e9e426827b4280bed1a8c71241d8357",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/30113033b5c6c60db554319943af0f16f7dc3e94",
+                "reference": "30113033b5c6c60db554319943af0f16f7dc3e94",
                 "shasum": ""
             },
             "require": {
@@ -1361,17 +1361,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony DomCrawler Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:12:41"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:48:43"
         },
         {
             "name": "symfony/event-dispatcher",

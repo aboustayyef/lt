@@ -1,79 +1,96 @@
 .top5{
-	a{
-		color:#555;
-		text-decoration:none;
-	}
-	ul{
-		padding:0;
-		list-style-type:none;
-	}
 
-	.item{
-		clear: both;
-	  	padding: 15px;
-	  	padding-left: 0;
-	  	margin-left: 10px;
-	  	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	  	overflow: auto;
-	  	&:hover{
-	  		background:darken(white,5);
-	  	}
-	}
+  ul{
+    padding:0;
+    li{
+      list-style-type:none;
+    }
+  }
 
-	h3{
-		font-size: 26px;
-	  	padding: 10px 10px 20px 10px;
-	  	color: #555;
-	  	margin-bottom:0;
-	  	margin-top:10px;
-	  	small{
-	  		font-size:0.6em;
-	  		color:#999;
-	  	}
-	}
-	.details{
-		line-height:1.5;
-		font-size:14px;
-		width:170px;
-		padding-right:10px;
-		overflow:hidden;
-		h5{
-			margin-top: 5px;
-			margin-bottom:10px;
-			margin-left:20px;
-			color: #89bfcb;
-			text-transform: uppercase;
-  			font-size: 12px;
-		}
-		img{
-			margin-top:5px;
-			display:block;
-		}
-		ul{
-			margin-top:10px;
-		}
+  h3{
+    font-size: 26px;
+    padding: 10px 10px 20px 10px;
+    color: #555;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 
-		li{
-			display:inline-block;
-			&:first-child{
-				margin-right:10px;
-			}
-		}
-	}
-	.thumb{
-		display:block;
-		width:80px;
-		height:80px;
-		border:1px solid rgba(0, 0, 0, 0.1);
-		overflow:hidden;
-		position:relative;
-		float:left;
-		margin-right:15px;
-	}
-	img{
-		position: absolute;
-		margin:0;
-		padding:0;
-		max-width:none;
-	}
+	.tweet{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:14px;
+  line-height:1.5;
+  overflow:auto;
+  margin-bottom:10px;
+
+  .profilepic{
+    padding-top:10px;
+    width:40px;
+    img{
+      max-width:100%;
+    }
+    margin-right:10px;
+    float:left;
+  }
+
+  .content{
+    border-top:1px solid #e4e4e4 ;
+    padding-top:10px;
+    width: calc(100% - 60px);
+    float:right;
+    overflow:hidden;
+    .media{
+      max-height:218px;
+      margin-top:15px;
+      margin-bottom:15px;
+      overflow-y:hidden;
+      img{
+        max-width:100%;
+      }
+    }
+    h5{
+      font-size:13px;
+      margin:2px;
+      color:#a8a8a8;
+      strong{
+        color:black;
+      }
+    }
+    p{
+      font-family:verdana;
+      font-size:12px;
+     &.arabic{
+      font-size:14px;
+      text-align:right;
+     }
+    }
+    a{
+      color:$mainColor;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+  .popularity{
+    font-size:12px;
+    color:silver;
+    margin-top:8px;
+    a{
+      color:silver;
+      g{
+        fill:silver;
+      }
+      &:hover{
+        color:darken(silver,20);
+        g{
+          fill:darken(silver,20);
+        }
+      }
+    }
+    li{
+      display:inline-block;
+      margin-right:15px;
+    }
+  }
+}
 }
